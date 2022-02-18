@@ -89,852 +89,435 @@ Within the tables, the following acronyms apply:
 
 # Appendices
 
-## Appendix A:
+## Appendix A: Soft Skills and Assessment Management
 
-Soft Skills and Assessment Management
+### A1 Engagement Lifecycle
 
-ID
+- ACE: MC
+- ICE: MC
 
-Skill
+Benefits and utility of penetration testing to the client.
 
-Details
+Structure of penetration testing, including the relevant processes and procedures.
 
-How Examined
-CCT ACE
-CCT ICE
+Concepts of infrastructure testing and application testing, including black box and white box formats.
 
-A1
-
-Engagement
-Lifecycle
-
-Benefits and utility of penetration testing to the
-client.
-
-MC
-
-MC
-
-MC
-
-MC
-
-MC
-
-MC
-
-MC
-
-MC
-
-MC
-
-MC
-
-P
-
-P
-
-Structure of penetration testing, including the
-relevant processes and procedures.
-Concepts of infrastructure testing and
-application testing, including black box and white
-box formats.
 Project closure and debrief
-A2
 
-Law &
-Compliance
+### A2 Law & Compliance
+
+- ACE: MC
+- ICE: MC
 
 Knowledge of pertinent UK legal issues:
-
 
-Computer Misuse Act 1990
+- Computer Misuse Act 1990
 
-
+- Human Rights Act 1998
 
-Human Rights Act 1998
+- Data Protection Act 1998
 
-
+- Police and Justice Act 2006
 
-Data Protection Act 1998
 
-
+Impact of this legislation on penetration testing activities.
 
-Police and Justice Act 2006
-
-Impact of this legislation on penetration testing
-activities.
 Awareness of sector-specific regulatory issues.
-A3
 
-Scoping
+### A3 Scoping
+
+- ACE: MC
+- ICE: MC
 
 Understanding client requirements.
+
 Scoping project to fulfil client requirements.
+
 Accurate timescale scoping.
+
 Resource planning.
 
-A4
+### A4 Understanding Explaining and Managing Risk
 
-Understanding
-Explaining and
-Managing Risk
+- ACE: MC
+- ICE: MC
 
-Knowledge of additional risks that penetration
-testing can present.
-Levels of risk relating to penetration testing, the
-usual outcomes of such risks materialising and
-how to mitigate the risks.
+Knowledge of additional risks that penetration testing can present.
+
+Levels of risk relating to penetration testing, the usual outcomes of such risks materialising and how to mitigate the risks.
+
 Effective planning for potential DoS conditions.
 
-A5
+### A5 Record Keeping, Interim Reporting & Final Results
 
-Record Keeping,
-Interim
-Reporting &
-Final Results
-
-Version: 2.2
+- ACE: MC, P
+- ICE: MC, P
 
 Understanding reporting requirements.
-Understanding the importance of accurate and
-structured record keeping during the
-engagement.
 
-Page 5 of 19
-
-Date: 17th May 2017
+Understanding the importance of accurate and structured record keeping during the engagement.
 
 
 
 ## Appendix B: Core Technical Skills
 
-ID
+### B1 IP Protocols
 
-Skill
+- ACE: MC
+- ICE: MC
 
-Details
-
-How Examined
-CCT ACE
-CCT ICE
-
-B1
-
-IP Protocols
-
-IP protocols: IPv4 and IPv6, TCP, UDP and
-ICMP.
-
-MC
-
-MC
-
-MC
-
-MC
+IP protocols: IPv4 and IPv6, TCP, UDP and ICMP.
 
 Awareness that other IP protocols exist.
-B2
 
-Network
-Architectures
+### B2 Network Architectures
 
-Varying networks types that could be
-encountered during a penetration test:
-
+- ACE: MC
+- ICE: MC
 
-CAT 5 / Fibre
+Varying networks types that could be encountered during a penetration test:
 
-
+- CAT 5 / Fibre
 
-10/100/1000baseT
+- 10/100/1000baseT
+- Token ring
 
-
+- Wireless (802.11)
 
-Token ring
+Security implications of shared media, switched media and VLANs.
 
-
+### B3 Network Routing
 
-Wireless (802.11)
+- ACE: MC
+- ICE: MC
 
-Security implications of shared media,
-switched media and VLANs.
-B3
+Network routing protocols RIP, OSPF, and IGRP/EIGRP.
 
-Network Routing
+### B4 Network Mapping & Target Identification
 
-Network routing protocols RIP, OSPF, and
-IGRP/EIGRP.
+- ACE: MC, P
+- ICE: MC, P
 
-MC
+Analysis of output from tools used to map the route between the engagement point and a number of targets.
 
-MC
+Network sweeping techniques to prioritise a target list and the potential for false negatives.
 
-B4
+### B5 Interpreting Tool Output
 
-Network Mapping
-& Target
-Identification
+- ACE: MC
+- ICE: MC
 
-Analysis of output from tools used to map the
-route between the engagement point and a
-number of targets.
+Interpreting output from port scanners, network sniffers and other network enumeration tools.
 
-MC
+### B6 Filtering Avoidance Techniques
 
-MC
+- ACE: MC
+- ICE: MC
 
-P
+The importance of egress and ingress filtering, including the risks associated with outbound connections.
 
-P
+### B7 Packet Crafting
 
-Network sweeping techniques to prioritise a
-target list and the potential for false
-negatives.
-B5
+- ACE: MC
+- ICE: MC
 
-Interpreting Tool
-Output
+Packet crafting to meet a particular requirement:
 
-Interpreting output from port scanners,
-network sniffers and other network
-enumeration tools.
+- Modifying source ports
 
-MC
+- Spoofing IP addresses
 
-MC
+- Manipulating TTL’s
 
-B6
+- Fragmentation
 
-Filtering
-Avoidance
-Techniques
+- Generating ICMP packets
 
-The importance of egress and ingress
-filtering, including the risks associated with
-outbound connections.
 
-MC
+### B8 OS Fingerprinting
 
-MC
+- ACE: MC
+- ICE: MC, P
 
-B7
+Remote operating system fingerprinting; active and passive techniques.
 
-Packet Crafting
+### B9 Application Fingerprinting and Evaluating Unknown Services
 
-Packet crafting to meet a particular
-requirement:
+- ACE: MC
+- ICE: MC, P
 
-MC
+Determining server types and network application versions from application banners.
 
-MC
+Evaluation of responsive but unknown network applications.
 
-MC
+### B10 Network Access Control Analysis
 
-MC
+- ACE: MC
+- ICE: MC
 
-B8
+Reviewing firewall rule bases and network access control lists.
 
-OS Fingerprinting
+### B11 Cryptography
 
-Version: 2.2
+- ACE: MC, P
+- ICE: MC
 
-
-
-Modifying source ports
-
-
-
-Spoofing IP addresses
-
-
-
-Manipulating TTL’s
-
-
-
-Fragmentation
-
-
-
-Generating ICMP packets
-
-Remote operating system fingerprinting;
-active and passive techniques.
-
-Page 6 of 19
-
-P
-
-Date: 17th May 2017
-
-ID
-
-Skill
-
-Details
-
-How Examined
-CCT ACE
-CCT ICE
-
-B9
-
-Application
-Fingerprinting and
-Evaluating
-Unknown
-Services
-
-Determining server types and network
-application versions from application
-banners.
-
-B10
-
-Network Access
-Control Analysis
-
-Reviewing firewall rule bases and network
-access control lists.
-
-MC
-
-MC
-
-B11
-
-Cryptography
-
-Differences between encryption and
-encoding.
-
-MC
-
-MC
-
-MC
-
-MC
-P
-
-Evaluation of responsive but unknown
-network applications.
-
-P
+Differences between encryption and encoding.
 
 Symmetric / asymmetric encryption
-Encryption algorithms: DES, 3DES, AES,
-RSA, RC4.
+
+Encryption algorithms: DES, 3DES, AES, RSA, RC4.
+
 Hashes: SHA1 and MD5
+
 Message Integrity codes: HMAC
-B12
 
-B13
+### B12 Applications of Cryptography
 
-Applications of
-Cryptography
+- ACE: MC
+- ICE: MC
 
 SSL, IPsec, SSH, PGP
 
-File System
-Permissions
+Common wireless (802.11) encryption protocols: WEP, WPA, TKIP
 
-File permission attributes within Unix and
-Windows file systems and their security
-implications.
+### B13 File System Permissions
 
-MC
+- ACE: MC
+- ICE: MC
 
-MC
-
-MC
-
-MC
-
-Common wireless (802.11) encryption
-protocols: WEP, WPA, TKIP
-
-P
+File permission attributes within Unix and Windows file systems and their security implications.
 
 Analysing registry ACLs.
-B14
 
-Audit Techniques
+### B14 Audit Techniques
 
-Listing processes and their associated
-network sockets (if any).
+- ACE: MC
+- ICE: MC, P
 
-MC
-
-MC
-P
+Listing processes and their associated network sockets (if any).
 
 Assessing patch levels.
+
 Finding interesting files.
-
-Version: 2.2
-
-Page 7 of 19
-
-Date: 17th May 2017
 
 ## Appendix C: Background Information Gathering & Open Source
 
-ID
+### C1 Registration Records
 
-Skill
+- ACE: MC
+- ICE: MC
 
-Details
+Information contained within IP and domain registries (WHOIS).
 
-How Examined
-CCT ACE
-CCT ICE
+### C2 Domain Name Server (DNS)
 
-C1
-
-Registration
-Records
-
-Information contained within IP and domain
-registries (WHOIS).
-
-MC
-
-MC
-
-C2
-
-Domain Name
-Server (DNS)
+- ACE: MC
+- ICE: MC, P
 
 DNS queries and responses
 
-MC
-
-MC
-
 DNS zone transfers
 
-P
+Structure, interpretation and analysis of DNS records:
 
-Structure, interpretation and analysis of DNS
-records:
+- SOA
 
-C3
+- MX
 
-
+- TXT
 
-SOA
+- A
 
-
+- NS
 
-MX
+- PTR
 
-
+- HINFO
 
-TXT
+- CNAME
 
-
 
-A
+### C3 Customer Web Site Analysis
 
-
+- ACE: MC, P
+- ICE: MC
 
-NS
+Analysis of information from a target web site, both from displayed content and from within the HTML source.
 
-
+### C4 Google Hacking and Web Enumeration
 
-PTR
+- ACE: MC
+- ICE: MC
 
-
+Effective use of search engines and other public data sources to gain information about a target.
 
-HINFO
+### C5 NNTP Newsgroups and Mailing Lists
 
-
+- ACE: MC
+- ICE: MC
 
-CNAME
+Searching newsgroups or mailing lists for useful information about a target.
 
-Customer Web
-Site Analysis
+### C6 Information Leakage from Mail & News Headers
 
-Analysis of information from a target web
-site, both from displayed content and from
-within the HTML source.
+- ACE: MC
+- ICE: MC
 
-MC
-
-C4
-
-Google Hacking
-and Web
-Enumeration
-
-Effective use of search engines and other
-public data sources to gain information about
-a target.
-
-MC
-
-MC
-
-C5
-
-NNTP
-Newsgroups and
-Mailing Lists
-
-Searching newsgroups or mailing lists for
-useful information about a target.
-
-MC
-
-MC
-
-C6
-
-Information
-Leakage from
-Mail & News
-Headers
-
-Analysing news group and e-mail headers to
-identify internal system information.
-
-MC
-
-MC
-
-Version: 2.2
-
-Page 8 of 19
-
-MC
-
-P
-
-Date: 17th May 2017
+Analysing news group and e-mail headers to identify internal system information.
 
 ## Appendix D: Networking Equipment
 
-ID
+### D1 Management Protocols
 
-Skill
+- ACE: MC
+- ICE: MC, P
 
-Details
+Weaknesses in the protocols commonly used for the remote management of devices:
 
-D1
+- Telnet
 
-Management
-Protocols
+- Web based protocols
 
-Weaknesses in the protocols commonly used
-for the remote management of devices:
+- SSH
 
-D2
+- SNMP (covering network information enumeration and common attacks against Cisco configurations)
 
-D3
+- TFTP
 
-D4
+- Cisco Reverse Telnet
 
-D5
+- NTP
 
-How Examined
-CCT ACE
-CCT ICE
 
-
+### D2 Network Traffic Analysis
 
-Telnet
-
-
-
-Web based protocols
-
-
-
-SSH
-
-
-
-SNMP (covering network information
-enumeration and common attacks
-against Cisco configurations)
-
-
-
-TFTP
-
-
-
-Cisco Reverse Telnet
-
-
-
-NTP
-
-Network Traffic
-Analysis
+- ACE: MC
+- ICE: MC
 
 Techniques for local network traffic analysis.
 
-Networking
-Protocols
+Analysis of network traffic stored in PCAP files.
 
-Security issues relating to the networking
-protocols:
+### D3 Networking Protocols
 
-IPSec
+- ACE: MC
+- ICE: MC, P
 
-VoIP
+Security issues relating to the networking protocols:
 
-MC
+- ARP
 
-MC
-P
+- DHCP
 
-MC
+- CDP
 
-MC
+- HSRP
 
-MC
+- VRRP
 
-MC
+- VTP
 
-Analysis of network traffic stored in PCAP
-files.
+- STP
 
-
+- TACACS+
 
-ARP
 
-
+### D4 IPSec
 
-DHCP
+- ACE: MC
+- ICE: MC, P
 
-
+Enumeration and fingerprinting of devices running IPSec services.
 
-CDP
+### D5 VoIP
 
-
+- ACE: MC
+- ICE: MC, P
 
-HSRP
-
-
-
-VRRP
-
-
-
-VTP
-
-
-
-STP
-
-
-
-TACACS+
-
-P
-
-Enumeration and fingerprinting of devices
-running IPSec services.
-
-MC
-
-Enumeration and fingerprinting of devices
-running VoIP services.
-
-MC
-
-MC
-P
-MC
-P
+Enumeration and fingerprinting of devices running VoIP services.
 
 Knowledge of the SIP protocol.
 
-Version: 2.2
+### D6 Wireless
 
-Page 9 of 19
+- ACE: MC
+- ICE: MC
 
-Date: 17th May 2017
+Enumeration and fingerprinting of devices running Wireless (802.11) services.
 
-ID
+Knowledge of various options for encryption and authentication, and the relative methods of each.
 
-Skill
+- WEP
 
-Details
+- TKIP
 
-How Examined
-CCT ACE
-CCT ICE
+- WPA/WPA2
 
-D6
+- EAP/LEAP/PEAP
 
-Wireless
 
-Enumeration and fingerprinting of devices
-running Wireless (802.11) services.
+### D7 Configuration Analysis
 
-MC
+- ACE: MC
+- ICE: MC, P
 
-MC
+Analysing configuration files from the following types of Cisco equipment:
 
-MC
+- Routers
 
-MC
+- Switches
 
-Knowledge of various options for encryption
-and authentication, and the relative methods
-of each.
 
-D7
-
-Configuration
-Analysis
-
-
-
-WEP
-
-
-
-TKIP
-
-
-
-WPA/WPA2
-
-
-
-EAP/LEAP/PEAP
-
-Analysing configuration files from the
-following types of Cisco equipment:
-
-
-Routers
-
-
-
-Switches
-
-P
-
-Interpreting the configuration of other
-manufacturers’ devices.
-
-Version: 2.2
-
-Page 10 of 19
-
-Date: 17th May 2017
+Interpreting the configuration of other manufacturers’ devices
 
 ## Appendix E: Microsoft Windows Security Assessment
 
+### E1 Domain Reconnaissance
 
+- ACE: MC
+- ICE: MC, P
 
-ID
+Identifying domains/workgroups and domain membership within the target network.
 
-Skill
+Identifying key servers within the target domains.
 
-Details
+Identifying and analysing internal browse lists.
 
-How Examined
-CCT ACE
-CCT ICE
+Identifying and analysing accessible SMB shares
 
-E1
+### E2 User Enumeration
 
-Domain
-Reconnaissance
+- ACE: MC
+- ICE: MC, P
 
-Identifying domains/workgroups and domain
-membership within the target network.
+Identifying user accounts on target systems and domains using NetBIOS, SNMP and LDAP.
 
-MC
+### E3 Active Directory
 
-MC
-P
+- ACE: MC
+- ICE: MC, P
 
-Identifying key servers within the target
-domains.
-Identifying and analysing internal browse
-lists.
-Identifying and analysing accessible SMB
-shares
-E2
-
-E3
-
-User Enumeration
-
-Active Directory
-
-Identifying user accounts on target systems
-and domains using NetBIOS, SNMP and
-LDAP.
-
-MC
-
-Active Directory Roles (Global Catalogue,
-Master Browser, FSMO)
-
-MC
-
-MC
-P
-MC
-P
+Active Directory Roles (Global Catalogue, Master Browser, FSMO)
 
 Reliance of AD on DNS and LDAP
+
 Group Policy (Local Security Policy)
-E4
 
-Windows
-Passwords
+### E4 Windows Passwords
 
-Password policies (complexity, lockout
-policies)
+- ACE: MC, P
+- ICE: MC, P
 
-MC
-
-MC
-
-P
-
-P
+Password policies (complexity, lockout policies)
 
 Account Brute Forcing
-Hash Storage (merits of LANMAN, NTLMv1 /
-v2)
-Offline Password Analysis (rainbow tables /
-hash brute forcing)
 
-Version: 2.2
+Hash Storage (merits of LANMAN, NTLMv1 / v2)
 
-Page 11 of 19
+Offline Password Analysis (rainbow tables / hash brute forcing)
 
-Date: 17th May 2017
-
-ID
-
-Skill
-
-Details
-
-How Examined
-CCT ACE
-CCT ICE
-
-E5
-
-Windows
-Vulnerabilities
+## E5 Windows Vulnerabilities
 
 Knowledge of remote windows vulnerabilities,
 particularly those for which robust exploit
