@@ -1,9 +1,11 @@
 ---
+
 ref: SYL_CCT_V2.0
 version: 2.2
 status: Public Release
-issue date: 2017-05-17
-issued by: CREST Technical Committee and Assessors Panel
+issue_date: 2017-05-17
+issued_by: CREST Technical Committee and Assessors Panel
+
 ---
 
 # Technical Committee and Assessors Panel
@@ -24,20 +26,20 @@ statement to the contrary has been appended.
 
 ## Version History
 
-| Version | Date | Authors | Status |
-| ------- | ---- | ------- | ------ |
-| 1.0     | 27 May 2016 | Technical Committee and Assessors Panel | Internal Review |
-| 2.0 | 3 June 2016 | Technical Committee and Assessors Panel | Public Release | 
-| 2.1 | 30 September 2016 | Technical Committee and Assessors Panel | Public Release |
-| 2.2 | 16 May 2017 | Technical Committee and Assessors Panel | Public Release |
+| Version | Date              | Authors                                 | Status          |
+| ------- | ----------------- | --------------------------------------- | --------------- |
+| 1.0     | 27 May 2016       | Technical Committee and Assessors Panel | Internal Review |
+| 2.0     | 3 June 2016       | Technical Committee and Assessors Panel | Public Release  |
+| 2.1     | 30 September 2016 | Technical Committee and Assessors Panel | Public Release  |
+| 2.2     | 16 May 2017       | Technical Committee and Assessors Panel | Public Release  |
 
 
 ## Document Review
 
-| Reviewer | Position |
-| -------- | -------- |
+| Reviewer | Position                              |
+| -------- | ------------------------------------- |
 | Chair    | Technical Committee / Assessors Panel |
-| Chair    | CREST Board |
+| Chair    | CREST Board                           |
 
 
 ## Introduction
@@ -96,66 +98,66 @@ Within the tables, the following acronyms apply:
 - ACE: MC
 - ICE: MC
 
-Benefits and utility of penetration testing to the client.
-
-Structure of penetration testing, including the relevant processes and procedures.
-
-Concepts of infrastructure testing and application testing, including black box and white box formats.
-
-Project closure and debrief
+> Benefits and utility of penetration testing to the client.
+>
+> Structure of penetration testing, including the relevant processes and procedures.
+>
+> Concepts of infrastructure testing and application testing, including black box and white box formats.
+>
+> Project closure and debrief
 
 ### A2 Law & Compliance
 
 - ACE: MC
 - ICE: MC
 
-Knowledge of pertinent UK legal issues:
-
-- Computer Misuse Act 1990
-
-- Human Rights Act 1998
-
-- Data Protection Act 1998
-
-- Police and Justice Act 2006
-
-
-Impact of this legislation on penetration testing activities.
-
-Awareness of sector-specific regulatory issues.
+> Knowledge of pertinent UK legal issues:
+>
+> - Computer Misuse Act 1990
+>
+> - Human Rights Act 1998
+>
+> - Data Protection Act 1998
+>
+> - Police and Justice Act 2006
+>
+>
+> Impact of this legislation on penetration testing activities.
+>
+> Awareness of sector-specific regulatory issues.
 
 ### A3 Scoping
 
 - ACE: MC
 - ICE: MC
 
-Understanding client requirements.
-
-Scoping project to fulfil client requirements.
-
-Accurate timescale scoping.
-
-Resource planning.
+> Understanding client requirements.
+>
+> Scoping project to fulfil client requirements.
+>
+> Accurate timescale scoping.
+>
+> Resource planning.
 
 ### A4 Understanding Explaining and Managing Risk
 
 - ACE: MC
 - ICE: MC
 
-Knowledge of additional risks that penetration testing can present.
-
-Levels of risk relating to penetration testing, the usual outcomes of such risks materialising and how to mitigate the risks.
-
-Effective planning for potential DoS conditions.
+> Knowledge of additional risks that penetration testing can present.
+>
+> Levels of risk relating to penetration testing, the usual outcomes of such risks materialising and how to mitigate the risks.
+>
+> Effective planning for potential DoS conditions.
 
 ### A5 Record Keeping, Interim Reporting & Final Results
 
 - ACE: MC, P
 - ICE: MC, P
 
-Understanding reporting requirements.
-
-Understanding the importance of accurate and structured record keeping during the engagement.
+> Understanding reporting requirements.
+>
+> Understanding the importance of accurate and structured record keeping during the engagement.
 
 
 
@@ -166,140 +168,140 @@ Understanding the importance of accurate and structured record keeping during th
 - ACE: MC
 - ICE: MC
 
-IP protocols: IPv4 and IPv6, TCP, UDP and ICMP.
-
-Awareness that other IP protocols exist.
+> IP protocols: IPv4 and IPv6, TCP, UDP and ICMP.
+>
+> Awareness that other IP protocols exist.
 
 ### B2 Network Architectures
 
 - ACE: MC
 - ICE: MC
 
-Varying networks types that could be encountered during a penetration test:
-
-- CAT 5 / Fibre
-
-- 10/100/1000baseT
-- Token ring
-
-- Wireless (802.11)
-
-Security implications of shared media, switched media and VLANs.
+> Varying networks types that could be encountered during a penetration test:
+>
+> - CAT 5 / Fibre
+>
+> - 10/100/1000baseT
+> - Token ring
+>
+> - Wireless (802.11)
+>
+> Security implications of shared media, switched media and VLANs.
 
 ### B3 Network Routing
 
 - ACE: MC
 - ICE: MC
 
-Network routing protocols RIP, OSPF, and IGRP/EIGRP.
+> Network routing protocols RIP, OSPF, and IGRP/EIGRP.
 
 ### B4 Network Mapping & Target Identification
 
 - ACE: MC, P
 - ICE: MC, P
 
-Analysis of output from tools used to map the route between the engagement point and a number of targets.
-
-Network sweeping techniques to prioritise a target list and the potential for false negatives.
+> Analysis of output from tools used to map the route between the engagement point and a number of targets.
+>
+> Network sweeping techniques to prioritise a target list and the potential for false negatives.
 
 ### B5 Interpreting Tool Output
 
 - ACE: MC
 - ICE: MC
 
-Interpreting output from port scanners, network sniffers and other network enumeration tools.
+> Interpreting output from port scanners, network sniffers and other network enumeration tools.
 
 ### B6 Filtering Avoidance Techniques
 
 - ACE: MC
 - ICE: MC
 
-The importance of egress and ingress filtering, including the risks associated with outbound connections.
+> The importance of egress and ingress filtering, including the risks associated with outbound connections.
 
 ### B7 Packet Crafting
 
 - ACE: MC
 - ICE: MC
 
-Packet crafting to meet a particular requirement:
-
-- Modifying source ports
-
-- Spoofing IP addresses
-
-- Manipulating TTL’s
-
-- Fragmentation
-
-- Generating ICMP packets
-
+> Packet crafting to meet a particular requirement:
+>
+> - Modifying source ports
+>
+> - Spoofing IP addresses
+>
+> - Manipulating TTL’s
+>
+> - Fragmentation
+>
+> - Generating ICMP packets
+>
 
 ### B8 OS Fingerprinting
 
 - ACE: MC
 - ICE: MC, P
 
-Remote operating system fingerprinting; active and passive techniques.
+> Remote operating system fingerprinting; active and passive techniques.
 
 ### B9 Application Fingerprinting and Evaluating Unknown Services
 
 - ACE: MC
 - ICE: MC, P
 
-Determining server types and network application versions from application banners.
-
-Evaluation of responsive but unknown network applications.
+> Determining server types and network application versions from application banners.
+>
+> Evaluation of responsive but unknown network applications.
 
 ### B10 Network Access Control Analysis
 
 - ACE: MC
 - ICE: MC
 
-Reviewing firewall rule bases and network access control lists.
+> Reviewing firewall rule bases and network access control lists.
 
 ### B11 Cryptography
 
 - ACE: MC, P
 - ICE: MC
 
-Differences between encryption and encoding.
-
-Symmetric / asymmetric encryption
-
-Encryption algorithms: DES, 3DES, AES, RSA, RC4.
-
-Hashes: SHA1 and MD5
-
-Message Integrity codes: HMAC
+> Differences between encryption and encoding.
+>
+> Symmetric / asymmetric encryption
+>
+> Encryption algorithms: DES, 3DES, AES, RSA, RC4.
+>
+> Hashes: SHA1 and MD5
+>
+> Message Integrity codes: HMAC
 
 ### B12 Applications of Cryptography
 
 - ACE: MC
 - ICE: MC
 
-SSL, IPsec, SSH, PGP
-
-Common wireless (802.11) encryption protocols: WEP, WPA, TKIP
+> SSL, IPsec, SSH, PGP
+>
+> Common wireless (802.11) encryption protocols: WEP, WPA, TKIP
 
 ### B13 File System Permissions
 
 - ACE: MC
 - ICE: MC
 
-File permission attributes within Unix and Windows file systems and their security implications.
-
-Analysing registry ACLs.
+> File permission attributes within Unix and Windows file systems and their security implications.
+>
+> Analysing registry ACLs.
 
 ### B14 Audit Techniques
 
 - ACE: MC
 - ICE: MC, P
 
-Listing processes and their associated network sockets (if any).
-
-Assessing patch levels.
-
-Finding interesting files.
+> Listing processes and their associated network sockets (if any).
+>
+> Assessing patch levels.
+>
+> Finding interesting files.
 
 ## Appendix C: Background Information Gathering & Open Source
 
@@ -308,63 +310,68 @@ Finding interesting files.
 - ACE: MC
 - ICE: MC
 
-Information contained within IP and domain registries (WHOIS).
+> Information contained within IP and domain registries (WHOIS).
+>
 
 ### C2 Domain Name Server (DNS)
 
 - ACE: MC
 - ICE: MC, P
 
-DNS queries and responses
-
-DNS zone transfers
-
-Structure, interpretation and analysis of DNS records:
-
-- SOA
-
-- MX
-
-- TXT
-
-- A
-
-- NS
-
-- PTR
-
-- HINFO
-
-- CNAME
-
+> DNS queries and responses
+>
+> DNS zone transfers
+>
+> Structure, interpretation and analysis of DNS records:
+>
+> - SOA
+>
+> - MX
+>
+> - TXT
+>
+> - A
+>
+> - NS
+>
+> - PTR
+>
+> - HINFO
+>
+> - CNAME
+>
 
 ### C3 Customer Web Site Analysis
 
 - ACE: MC, P
 - ICE: MC
 
-Analysis of information from a target web site, both from displayed content and from within the HTML source.
+> Analysis of information from a target web site, both from displayed content and from within the HTML source.
+>
 
 ### C4 Google Hacking and Web Enumeration
 
 - ACE: MC
 - ICE: MC
 
-Effective use of search engines and other public data sources to gain information about a target.
+> Effective use of search engines and other public data sources to gain information about a target.
+>
 
 ### C5 NNTP Newsgroups and Mailing Lists
 
 - ACE: MC
 - ICE: MC
 
-Searching newsgroups or mailing lists for useful information about a target.
+> Searching newsgroups or mailing lists for useful information about a target.
+>
 
 ### C6 Information Leakage from Mail & News Headers
 
 - ACE: MC
 - ICE: MC
 
-Analysing news group and e-mail headers to identify internal system information.
+> Analysing news group and e-mail headers to identify internal system information.
+>
 
 ## Appendix D: Networking Equipment
 
@@ -373,103 +380,106 @@ Analysing news group and e-mail headers to identify internal system information.
 - ACE: MC
 - ICE: MC, P
 
-Weaknesses in the protocols commonly used for the remote management of devices:
-
-- Telnet
-
-- Web based protocols
-
-- SSH
-
-- SNMP (covering network information enumeration and common attacks against Cisco configurations)
-
-- TFTP
-
-- Cisco Reverse Telnet
-
-- NTP
-
+> Weaknesses in the protocols commonly used for the remote management of devices:
+>
+> - Telnet
+>
+> - Web based protocols
+>
+> - SSH
+>
+> - SNMP (covering network information enumeration and common attacks against Cisco configurations)
+>
+> - TFTP
+>
+> - Cisco Reverse Telnet
+>
+> - NTP
+>
 
 ### D2 Network Traffic Analysis
 
 - ACE: MC
 - ICE: MC
 
-Techniques for local network traffic analysis.
-
-Analysis of network traffic stored in PCAP files.
+> Techniques for local network traffic analysis.
+>
+> Analysis of network traffic stored in PCAP files.
 
 ### D3 Networking Protocols
 
 - ACE: MC
 - ICE: MC, P
 
-Security issues relating to the networking protocols:
-
-- ARP
-
-- DHCP
-
-- CDP
-
-- HSRP
-
-- VRRP
-
-- VTP
-
-- STP
-
-- TACACS+
-
+> Security issues relating to the networking protocols:
+>
+> - ARP
+>
+> - DHCP
+>
+> - CDP
+>
+> - HSRP
+>
+> - VRRP
+>
+> - VTP
+>
+> - STP
+>
+> - TACACS+
+>
 
 ### D4 IPSec
 
 - ACE: MC
 - ICE: MC, P
 
-Enumeration and fingerprinting of devices running IPSec services.
+> Enumeration and fingerprinting of devices running IPSec services.
+>
 
 ### D5 VoIP
 
 - ACE: MC
 - ICE: MC, P
 
-Enumeration and fingerprinting of devices running VoIP services.
-
-Knowledge of the SIP protocol.
+> Enumeration and fingerprinting of devices running VoIP services.
+>
+> Knowledge of the SIP protocol.
+>
 
 ### D6 Wireless
 
 - ACE: MC
 - ICE: MC
 
-Enumeration and fingerprinting of devices running Wireless (802.11) services.
-
-Knowledge of various options for encryption and authentication, and the relative methods of each.
-
-- WEP
-
-- TKIP
-
-- WPA/WPA2
-
-- EAP/LEAP/PEAP
-
+> Enumeration and fingerprinting of devices running Wireless (802.11) services.
+>
+> Knowledge of various options for encryption and authentication, and the relative methods of each.
+>
+> - WEP
+>
+> - TKIP
+>
+> - WPA/WPA2
+>
+> - EAP/LEAP/PEAP
+>
 
 ### D7 Configuration Analysis
 
 - ACE: MC
 - ICE: MC, P
 
-Analysing configuration files from the following types of Cisco equipment:
-
-- Routers
-
-- Switches
-
-
-Interpreting the configuration of other manufacturers’ devices
+> Analysing configuration files from the following types of Cisco equipment:
+>
+> - Routers
+>
+> - Switches
+>
+>
+> Interpreting the configuration of other manufacturers’ devices
+>
 
 ## Appendix E: Microsoft Windows Security Assessment
 
@@ -478,1073 +488,585 @@ Interpreting the configuration of other manufacturers’ devices
 - ACE: MC
 - ICE: MC, P
 
-Identifying domains/workgroups and domain membership within the target network.
-
-Identifying key servers within the target domains.
-
-Identifying and analysing internal browse lists.
-
-Identifying and analysing accessible SMB shares
+> Identifying domains/workgroups and domain membership within the target network.
+>
+> Identifying key servers within the target domains.
+>
+> Identifying and analysing internal browse lists.
+>
+> Identifying and analysing accessible SMB shares
 
 ### E2 User Enumeration
 
 - ACE: MC
 - ICE: MC, P
 
-Identifying user accounts on target systems and domains using NetBIOS, SNMP and LDAP.
+> Identifying user accounts on target systems and domains using NetBIOS, SNMP and LDAP.
+>
 
 ### E3 Active Directory
 
 - ACE: MC
 - ICE: MC, P
 
-Active Directory Roles (Global Catalogue, Master Browser, FSMO)
-
-Reliance of AD on DNS and LDAP
-
-Group Policy (Local Security Policy)
+> Active Directory Roles (Global Catalogue, Master Browser, FSMO)
+>
+> Reliance of AD on DNS and LDAP
+>
+> Group Policy (Local Security Policy)
 
 ### E4 Windows Passwords
 
 - ACE: MC, P
 - ICE: MC, P
 
-Password policies (complexity, lockout policies)
+> Password policies (complexity, lockout policies)
+>
+> Account Brute Forcing
+>
+> Hash Storage (merits of LANMAN, NTLMv1 / v2)
+>
+> Offline Password Analysis (rainbow tables / hash brute forcing)
 
-Account Brute Forcing
+### E5 Windows Vulnerabilities
 
-Hash Storage (merits of LANMAN, NTLMv1 / v2)
+- ACE: MC, P
+- ICE: MC, P
 
-Offline Password Analysis (rainbow tables / hash brute forcing)
+> Knowledge of remote windows vulnerabilities, particularly those for which robust exploit code exists in the public domain.
+>
+> Knowledge of local windows privilege escalation vulnerabilities and techniques.
+>
+> Knowledge of common post exploitation activities:
+>
+> - obtain password hashes, both from the local SAM and cached credentials
+> - obtaining locally-stored clear-text passwords
+> - crack password hashes
+>
+> - check patch levels
+>
+> - derive list of missing security patches
+>
+> - reversion to previous state
+>
 
-## E5 Windows Vulnerabilities
+### E6 Windows Patch Management Strategies
 
-Knowledge of remote windows vulnerabilities,
-particularly those for which robust exploit
-code exists in the public domain.
+- ACE: MC
+- ICE: MC, P
 
-MC
+> Knowledge of common windows patch management strategies:
+>
+> - SMS
+>
+> - SUS
+>
+> - WSUS
+>
+> - MBSA
+>
 
-MC
+### Desktop Lockdown
 
-P
+- ACE: MC
+- ICE: MC, P
 
-P
+> Knowledge and understanding of techniques to break out of a locked down Windows desktop / Citrix environment.
+>
+> Privilege escalation techniques.
 
-MC
+### E8 Exchange
 
-MC
+- ACE: MC
+- ICE: MC
 
-Knowledge of local windows privilege
-escalation vulnerabilities and techniques.
-Knowledge of common post exploitation
-activities:
+> Knowledge of common attack vectors for Microsoft Exchange Server.
+>
 
-E6
+### E9 Common Windows Applications
 
-E7
+- ACE: MC
+- ICE: MC, P
 
-Windows Patch
-Management
-Strategies
-
-Desktop
-Lockdown
-
-
-
-obtain password hashes, both from
-the local SAM and cached
-credentials
-
-
-
-obtaining locally-stored clear-text
-passwords
-
-
-
-crack password hashes
-
-
-
-check patch levels
-
-
-
-derive list of missing security patches
-
-
-
-reversion to previous state
-
-Knowledge of common windows patch
-management strategies:
-
-
-SMS
-
-
-
-SUS
-
-
-
-WSUS
-
-
-
-MBSA
-
-Knowledge and understanding of techniques
-to break out of a locked down Windows
-desktop / Citrix environment.
-
-P
-
-MC
-
-MC
-P
-
-Privilege escalation techniques.
-E8
-
-Exchange
-
-Knowledge of common attack vectors for
-Microsoft Exchange Server.
-
-MC
-
-MC
-
-E9
-
-Common
-Windows
-Applications
-
-Knowledge of significant vulnerabilities in
-common windows applications for which
-there is public exploit code available.
-
-MC
-
-MC
-
-Version: 2.2
-
-Page 12 of 19
-
-P
-
-Date: 17th May 2017
+> Knowledge of significant vulnerabilities in common windows applications for which there is public exploit code available.
 
 ## Appendix F: Unix Security Assessment
 
-
-
-ID
-
-Skill
-
-Details
-
-How Examined
-CCT ACE
-CCT ICE
-
-F1
-
-User enumeration
-
-Discovery of valid usernames from network
-services commonly running by default:
-
-
-rusers
-
-
-
-rwho
-
-
-
-SMTP
-
-
-
-finger
-
-MC
-
-MC
-P
-
-Understand how finger daemon derives the
-information that it returns, and hence how it
-can be abused.
-F2
-
-Unix
-vulnerabilities
-
-Recent or commonly-found Solaris
-vulnerabilities, and in particular those for
-which there is exploit code in the public
-domain.
-
-MC
-
-MC
-P
-
-Recent or commonly-found Linux
-vulnerabilities, and in particular those for
-which there is exploit code in the public
-domain.
-Use of remote exploit code and local exploit
-code to gain root access to target host
-Common post-exploitation activities:
-
-F3
-
-FTP
-
-
-
-exfiltrate password hashes
-
-
-
-crack password hashes
-
-
-
-check patch levels
-
-
-
-derive list of missing security patches
-
-
-
-reversion to previous state
-
-FTP access control
-
-MC
-
-Anonymous access to FTP servers
-
-MC
-P
-
-Risks of allowing write access to anonymous
-users.
-F4
-
-Sendmail / SMTP
-
-Valid username discovery via EXPN and
-VRFY
-
-MC
-
-MC
-P
-
-Awareness of recent Sendmail vulnerabilities;
-ability to exploit them if possible
-Mail relaying
-
-Version: 2.2
-
-Page 13 of 19
-
-Date: 17th May 2017
-
-ID
-
-Skill
-
-Details
-
-How Examined
-CCT ACE
-CCT ICE
-
-F5
-
-Network File
-System (NFS)
-
-NFS security: host level (exports restricted to
-particular hosts) and file level (by UID and
-GID).
-
-MC
-
-MC
-P
-
-Root squashing, nosuid and noexec options.
-File access through UID and GID
-manipulation.
-F6
-
-R* services
-
-Berkeley r* service:
-
-MC
-
-
-
-access control (/etc/hosts.equiv and
-.rhosts)
-
-
-
-trust relationships
-
-MC
-P
-
-Impact of poorly-configured trust
-relationships.
-F7
-
-F8
-
-X11
-
-RPC services
-
-X Windows security and configuration; hostbased vs. user-based access control.
-
-MC
-
-RPC service enumeration
-
-MC
-
-MC
-P
-
-Common RPC services
-
-MC
-P
-
-Recent or commonly-found RPC service
-vulnerabilities.
-F9
-
-SSH
-
-Identify the types and versions of SSH
-software in use
-
-MC
-
-MC
-P
-
-Securing SSH
-Versions 1 and 2 of the SSH protocol
-Authentication mechanisms within SSH
-
-Version: 2.2
-
-Page 14 of 19
-
-Date: 17th May 2017
+### F1 User enumeration
+
+- ACE: MC
+- ICE: MC, P
+
+> Discovery of valid usernames from network services commonly running by default:
+>
+> - rusers
+>
+> - rwho
+>
+> - SMTP
+>
+> - finger
+>
+>
+> Understand how finger daemon derives the information that it returns, and hence how it can be abused.
+
+### F2 Unix vulnerabilities
+
+- ACE: MC
+- ICE: MC, P
+
+> Recent or commonly-found Solaris vulnerabilities, and in particular those for which there is exploit code in the public domain.
+>
+> Recent or commonly-found Linux vulnerabilities, and in particular those for which there is exploit code in the public domain.
+>
+> Use of remote exploit code and local exploit code to gain root access to target host 
+>
+> Common post-exploitation activities:
+>
+> - exfiltrate password hashes
+>
+> - crack password hashes
+>
+> - check patch levels
+>
+> - derive list of missing security patches
+>
+> - reversion to previous state
+>
+
+### F3 FTP
+
+- ACE: MC
+- ICE: MC, P
+
+> FTP access control
+>
+> Anonymous access to FTP servers
+>
+> Risks of allowing write access to anonymous users.
+
+### F4 Sendmail / SMTP
+
+- ACE: MC
+- ICE: MC, P
+
+> Valid username discovery via EXPN and VRFY
+>
+> Awareness of recent Sendmail vulnerabilities; ability to exploit them if possible
+>
+> Mail relaying
+
+### F5 Network File System (NFS)
+
+- ACE: MC
+- ICE: MC, P
+
+> NFS security: host level (exports restricted to particular hosts) and file level (by UID and GID).
+>
+> Root squashing, nosuid and noexec options.
+>
+> File access through UID and GID manipulation.
+
+### F6 R* services
+
+- ACE: MC
+- ICE: MC, P
+
+> Berkeley r* service:
+>
+> - access control (/etc/hosts.equiv and .rhosts)
+>
+> - trust relationships
+>
+>
+> Impact of poorly-configured trust relationships.
+
+### F7 X11
+
+- ACE: MC
+- ICE: MC, P
+
+> X Windows security and configuration; hostbased vs. user-based access control.
+>
+
+### F8 RPC services
+
+- ACE: MC
+- ICE: MC, P
+
+> RPC service enumeration
+>
+> Common RPC services
+>
+> Recent or commonly-found RPC service vulnerabilities.
+
+### F9 SSH
+
+- ACE: MC
+- ICE: MC, P
+
+> Identify the types and versions of SSH software in use
+>
+> Securing SSH
+>
+> Versions 1 and 2 of the SSH protocol
+>
+> Authentication mechanisms within SSH
 
 ## Appendix G: Web Technologies
 
+### G1 Web Server Operation
 
+- ACE: MC
+- ICE: MC
 
-ID
+> How a web server functions in terms of the client/server architecture.
+>
+> Concepts of virtual hosting and web proxies.
 
-Skill
+### G2 Web Servers & their Flaws
 
-Details
+- ACE: MC, P
+- ICE: MC, P
 
-How Examined
-CCT ACE
-CCT ICE
+> Common web servers and their fundamental differences and vulnerabilities associated with them:
+>
+> - IIS
+>
+> - Apache (and variants)
+>
 
-G1
+### G3 Web Enterprise Architectures
 
-Web Server
-Operation
+- ACE: MC
+- ICE: MC
 
-How a web server functions in terms of the
-client/server architecture.
+> Design of tiered architectures.
+>
+> The concepts of logical and physical separation.
+>
+> Differences between presentation, application and database layers.
 
-MC
+### G4 Web Protocols
 
-MC
+- ACE: MC, P
+- ICE: MC, P
 
-MC
+> Web protocols: HTTP, HTTPS, SOAP.
+>
+> All HTTP web methods and response codes.
+>
+> HTTP Header Fields relating to security features
 
-MC
+### G5 Web Mark-up Languages
 
-P
+- ACE: MC
+- ICE: MC
 
-P
+> Web mark-up languages: HTML and XML.
+>
+> G6 Web Programming Languages
+>
 
-MC
+- ACE: MC
+- ICE: MC
 
-MC
+> Common web programming languages: JSP, ASP, PHP, CGI based Perl and JavaScript.
+>
 
-MC
+### G7 Web Application Servers
 
-MC
+- ACE: MC, P
+- ICE: MC
 
-P
+> Vulnerabilities in common application frameworks, servers and technologies: .NET, J2EE, Coldfusion, Ruby on Rails and AJAX.
+>
 
-P
+### G8 Web APIs
 
-Concepts of virtual hosting and web proxies.
-G2
+- ACE: MC, P
+- ICE: MC
 
-G3
+> Application interfaces: CGI, ISAPI filters and Apache modules.
+>
 
-Web Servers &
-their Flaws
+### G9 Web SubComponents
 
-Web Enterprise
-Architectures
+- ACE: MC, P
+- ICE: MC
 
-Common web servers and their fundamental
-differences and vulnerabilities associated
-with them:
-
-
-IIS
-
-
-
-Apache (and variants)
-
-Design of tiered architectures.
-The concepts of logical and physical
-separation.
-Differences between presentation,
-application and database layers.
-
-G4
-
-Web Protocols
-
-Web protocols: HTTP, HTTPS, SOAP.
-All HTTP web methods and response codes.
-HTTP Header Fields relating to security
-features
-
-G5
-
-Web Mark-up
-Languages
-
-Web mark-up languages: HTML and XML.
-
-MC
-
-MC
-
-G6
-
-Web
-Programming
-Languages
-
-Common web programming languages: JSP,
-ASP, PHP, CGI based Perl and JavaScript.
-
-MC
-
-MC
-
-G7
-
-Web Application
-Servers
-
-Vulnerabilities in common application
-frameworks, servers and technologies: .NET,
-J2EE, Coldfusion, Ruby on Rails and AJAX.
-
-MC
-
-MC
-
-Web APIs
-
-Application interfaces: CGI, ISAPI filters and
-Apache modules.
-
-MC
-
-Web architecture sub-components:
-Thin/Thick web clients, servlets and applets,
-Active X.
-
-MC
-
-G8
-
-G9
-
-Web SubComponents
-
-P
-MC
-
-P
-MC
-
-P
-
-Flash Application Testing
-.Net Thick Clients
-Java Applets
-Decompilation of client-side code
-
-Version: 2.2
-
-Page 15 of 19
-
-Date: 17th May 2017
+> Web architecture sub-components:
+>
+> - Thin/Thick web clients, servlets and applets, Active X.
+> - Flash Application Testing
+> - .Net Thick Clients
+> - Java Applets
+> - Decompilation of client-side code
 
 ## Appendix H: Web Testing Methodologies
 
+### H1 Web Application Reconnaissance
 
+- ACE: MC
+- ICE: MC
 
-ID
+> Benefits of performing application reconnaissance.
+>
+> Discovering the structure of web applications.
+>
+> Methods to identify the use of application components defined in G1 to G9.
 
-Skill
+### H2 Threat Modelling and Attack Vectors
 
-Details
+- ACE: MC
+- ICE: MC
 
-How Examined
-CCT ACE
-CCT ICE
+> Simple threat modelling based on customer perception of risk.
+>
+> Relate functionality offered by the application to potential attack vectors.
 
-H1
+### H3 Information Gathering from Web Mark-up
 
-Web Application
-Reconnaissance
+- ACE: MC, P
+- ICE: MC
 
-Benefits of performing application
-reconnaissance.
+> Examples of the type of information available in web page source that may prove useful to an attacker:
+>
+> - Hidden Form Fields
+>
+> - Database Connection Strings
+>
+> - Credentials
+>
+> - Developer Comments
+>
+> - Other included files
+>
+> - Authenticated-only URLs
+>
 
-MC
+### H4 Authentication Mechanisms
 
-MC
+- ACE: MC, P
+- ICE: MC
 
-MC
+> Common pitfalls associated with the design and implementation of application authentication mechanisms.
 
-MC
+### H5 Authorisation Mechanisms
 
-MC
+- ACE: MC, P
+- ICE: MC
 
-MC
+> Common pitfalls associated with the design and implementation of application authorisation mechanisms.
+>
 
-Discovering the structure of web applications.
-Methods to identify the use of application
-components defined in G1 to G9.
-H2
+### H6 Input Validation
 
-H3
+- ACE: MC, P
+- ICE: MC
 
-H4
+> The importance of input validation as part of a defensive coding strategy.
+>
+> How input validation can be implemented and the differences between white listing, black listing and data sanitisation.
 
-H5
+### H7 Application Fuzzing
 
-H6
+- ACE: MC, P
+- ICE: MC
 
-Threat Modelling
-and Attack
-Vectors
+> Fuzzing and its relevance within web-app penetration testing.
+>
+> The use of fuzz strings and their potential effects.
+>
+> Potential dangers of fuzzing web applications.
 
-Simple threat modelling based on customer
-perception of risk.
+### H8 Information Disclosure in Error Messages
 
-Information
-Gathering from
-Web Mark-up
+- ACE: MC
+- ICE: MC
 
-Examples of the type of information available
-in web page source that may prove useful to
-an attacker:
+> How error messages may indicate or disclose useful information.
+>
 
-Relate functionality offered by the application
-to potential attack vectors.
+### H9 Use of Cross Site Scripting Attacks
 
-
+- ACE: MC, P
+- ICE: MC
 
-Hidden Form Fields
+> Potential implications of a cross site scripting vulnerability.
+>
+> Ways in which the technique can be used to benefit an attacker.
 
-
+### H10 Use of Injection Attacks
 
-Database Connection Strings
+- ACE: MC, P
+- ICE: MC
 
-
+> Potential implications of injection vulnerabilities:
+>
+> - SQL injection
+> - LDAP injection
+> - Code injection
+> - XML injection
+>
+> Ways in which these techniques can be used to benefit an attacker.
 
-Credentials
+### H11 Session Handling
 
-
+- ACE: MC, P
+- ICE: MC
 
-Developer Comments
+> Common pitfalls associated with the design and implementation of session handling mechanisms.
 
-
+### H12 Encryption
 
-Other included files
+- ACE: MC, P
+- ICE: MC
 
-
+> Common techniques used for encrypting data in transit and data at rest, either on the client or server side.
+>
+> Identification and exploitation of Encoded values (e.g. Base64) and Identification and exploitation of Cryptographic values (e.g. MD5 hashes)
+>
+> Identification of common SSL vulnerabilities
 
-Authenticated-only URLs
+### H13 Source Code Review
 
-P
+- ACE: MC, P
+- ICE: MC
 
-Authentication
-Mechanisms
-
-Common pitfalls associated with the design
-and implementation of application
-authentication mechanisms.
-
-MC
-
-Authorisation
-Mechanisms
-
-Common pitfalls associated with the design
-and implementation of application
-authorisation mechanisms.
-
-MC
-
-Input Validation
-
-The importance of input validation as part of
-a defensive coding strategy.
-
-MC
-
-MC
-
-P
-MC
-
-P
-MC
-
-P
-
-How input validation can be implemented and
-the differences between white listing, black
-listing and data sanitisation.
-H7
-
-Application
-Fuzzing
-
-Fuzzing and its relevance within web-app
-penetration testing.
-
-MC
-
-MC
-
-P
-
-The use of fuzz strings and their potential
-effects.
-Potential dangers of fuzzing web
-applications.
-
-Version: 2.2
-
-Page 16 of 19
-
-Date: 17th May 2017
-
-ID
-
-Skill
-
-Details
-
-How Examined
-CCT ACE
-CCT ICE
-
-H8
-
-Information
-Disclosure in
-Error Messages
-
-How error messages may indicate or disclose
-useful information.
-
-MC
-
-MC
-
-H9
-
-Use of Cross Site
-Scripting Attacks
-
-Potential implications of a cross site scripting
-vulnerability.
-
-MC
-
-MC
-
-P
-
-Ways in which the technique can be used to
-benefit an attacker.
-H10
-
-Use of Injection
-Attacks
-
-Potential implications of injection
-vulnerabilities:
-
-MC
-
-MC
-
-P
-
- SQL injection
- LDAP injection
- Code injection
- XML injection
-Ways in which these techniques can be used
-to benefit an attacker.
-H11
-
-H12
-
-Session Handling
-
-Encryption
-
-Common pitfalls associated with the design
-and implementation of session handling
-mechanisms.
-
-MC
-
-Common techniques used for encrypting data
-in transit and data at rest, either on the client
-or server side.
-
-MC
-
-MC
-
-P
-MC
-
-P
-
-Identification and exploitation of Encoded
-values (e.g. Base64) and Identification and
-exploitation of Cryptographic values (e.g.
-MD5 hashes)
-Identification of common SSL vulnerabilities
-H13
-
-Source Code
-Review
-
-Version: 2.2
-
-Common techniques for identifying and
-reviewing deficiencies in the areas of
-security.
-
-Page 17 of 19
-
-MC
-
-MC
-
-P
-
-Date: 17th May 2017
+> Common techniques for identifying and reviewing deficiencies in the areas of security.
 
 ## Appendix I: Web Testing Techniques
 
+### I1 Web Site Structure Discovery
 
+- ACE: P
+- ICE: MC
 
-ID
+> Spidering tools and their relevance in a web application test for discovering linked content.
+>
+> Forced browsing techniques to discover default or unlinked content.
+>
+> Identification of functionality within client-side code
 
-Skill
+### I2 Cross Site Scripting Attacks
 
-Details
+- ACE: P
+- ICE: MC
 
-How Examined
-CCT ACE
-CCT ICE
+> Arbitrary JavaScript execution.
+>
+> Using Cross Site Scripting techniques to obtain sensitive information from other users.
+>
+> Phishing techniques.
 
-I1
+### I3 SQL Injection
 
-Web Site
-Structure
-Discovery
+- ACE: P
+- ICE: MC
 
-Spidering tools and their relevance in a web
-application test for discovering linked content.
+> Determine the existence of an SQL injection condition in a web application.
+>
+> Determine the existence of a blind SQL injection condition in a web application.
+>
+> Exploit SQL injection to enumerate the database and its structure.
+>
+> Exploit SQL injection to execute commands on the target server.
 
-P
+### I4 Session ID Attacks
 
-MC
+- ACE: P
+- ICE: MC
 
-P
+> Investigate session handling within a web application.
+>
+> Harvest and analyse a number of session identifiers for weaknesses.
 
-MC
+### I5 Fuzzing
 
-P
+- ACE: P
+- ICE: MC
 
-MC
+> The concept of fuzzing within a web application testing methodology.
+>
+> Common fuzzing tools.
 
-P
+### I6 Parameter Manipulation
 
-MC
+- ACE: P
+- ICE: MC
 
-P
+> Parameter manipulation techniques, particularly the use of client side proxies.
 
-MC
+### I7 Data Confidentiality & Integrity
 
-Forced browsing techniques to discover default
-or unlinked content.
-•Identification of functionality within client-side
-code
+- ACE: P
+- ICE: MC
 
-I2
+> Identifying weak (or missing) encryption.
+>
+> Identifying insecure SSL configurations.
+>
+> Identify insecure use of encoding techniques
 
-Cross Site
-Scripting
-Attacks
+### I8 Directory Traversal
 
-Arbitrary JavaScript execution.
-Using Cross Site Scripting techniques to obtain
-sensitive information from other users.
-Phishing techniques.
+- ACE: P
+- ICE: MC
 
-I3
+> Identifying directory traversal vulnerabilities within applications.
 
-SQL Injection
+### I9 File Uploads
 
-Determine the existence of an SQL injection
-condition in a web application.
-Determine the existence of a blind SQL injection
-condition in a web application.
-Exploit SQL injection to enumerate the database
-and its structure.
-Exploit SQL injection to execute commands on
-the target server.
+- ACE: P
+- ICE: MC
 
-I4
+> Identifying common vulnerabilities with file upload capabilities within applications.
 
-Session ID
-Attacks
+### I10 Code Injection
 
-Investigate session handling within a web
-application.
-Harvest and analyse a number of session
-identifiers for weaknesses.
+- ACE: P
+- ICE: MC
 
-I5
+> Investigate and exploitation of code injection vulnerabilities within web applications
 
-Fuzzing
+### I11 CRLF Attacks
 
-The concept of fuzzing within a web application
-testing methodology.
-Common fuzzing tools.
+- ACE: P
+- ICE: MC
 
-I6
+> Assessment of web applications for CRLF vulnerabilities
 
-Parameter
-Manipulation
+### I12 Application Logic Flaws
 
-Parameter manipulation techniques, particularly
-the use of client side proxies.
+- ACE: P
+- ICE: MC
 
-P
-
-MC
-
-I7
-
-Data
-Confidentiality &
-Integrity
-
-Identifying weak (or missing) encryption.
-
-P
-
-MC
-
-Identifying insecure SSL configurations.
-Identify insecure use of encoding techniques
-
-I8
-
-Directory
-Traversal
-
-Identifying directory traversal vulnerabilities
-within applications.
-
-P
-
-MC
-
-I9
-
-File Uploads
-
-Identifying common vulnerabilities with file
-upload capabilities within applications.
-
-P
-
-MC
-
-Version: 2.2
-
-Page 18 of 19
-
-Date: 17th May 2017
-
-ID
-
-Skill
-
-Details
-
-I10
-
-Code Injection
-
-Investigate and exploitation of code injection
-vulnerabilities within web applications
-
-P
-
-MC
-
-I11
-
-CRLF Attacks
-
-Assessment of web applications for CRLF
-vulnerabilities
-
-P
-
-MC
-
-I12
-
-Application
-Logic Flaws
-
-Assessing the logic flow within an application
-and the potential for subverting the logic.
-
-P
-
-MC
+> Assessing the logic flow within an application and the potential for subverting the logic.
 
 ## Appendix J: Databases
 
-How Examined
-CCT ACE
-CCT ICE
+### J1 Microsoft SQL Server
 
-ID
+- ACE: MC, P
+- ICE: MC, P
 
-Skill
+> Knowledge of common attack vectors for Microsoft SQL Server. Understanding of privilege escalation and attack techniques for a system compromised via database connections.
 
-Details
+### J2 Oracle RDBMS
 
-J1
+- ACE: MC, P
+- ICE: MC, P
 
-Microsoft SQL
-Server
+> Derivation of version and patch information from hosts running Oracle software.
+>
+> Default Oracle accounts.
 
-Knowledge of common attack vectors for
-Microsoft SQL Server. Understanding of
-privilege escalation and attack techniques for a
-system compromised via database connections.
+### J3 Web / App / Database Connectivity
 
-MC
+- ACE: MC, P
+- ICE: MC, P
 
-MC
+> Common databases (MS SQL server, Oracle, MySQL and Access) and the connection and authentication methods used by web applications.
+>
 
-P
-
-P
-
-Oracle RDBMS
-
-Derivation of version and patch information from
-hosts running Oracle software.
-
-MC
-
-MC
-
-P
-
-P
-
-MC
-
-MC
-
-P
-
-P
-
-J2
-
-How Examined
-CCT ACE
-CCT ICE
-
-Default Oracle accounts.
-J3
-
-Web / App /
-Database
-Connectivity
-
-Version: 2.2
-
-Common databases (MS SQL server, Oracle,
-MySQL and Access) and the connection and
-authentication methods used by web
-applications.
-
-Page 19 of 19
-
-Date: 17th May 2017
-
-
