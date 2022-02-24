@@ -22,7 +22,9 @@ The markdown version of the syllabus in this repo is a version of the PDF doc, c
  - Most of the pre-appendix sections are just verbatim copies of the actual doc and not that useful
  - The topic listings in the appendix are separated out as topics under H2s
  - Skill names are under H3s 
- - Under each skill the "how examined" column is shown as the first unordered list in that section
+ - Under each skill, metadata for that skill is shown as the first unordered list in that section:
+    - "How Examined" ICE/ACE, MC/P
+    - Any other list item is treated as a YAML style key-value pair and stored against the metadata for that skill in the internal data structure
  - Everything in block quotes is the "details" column
  - Everything else is your own notes
 
@@ -49,3 +51,16 @@ Output all the CCT Inf multiple choice skills as JSON:
 ```
 python syllabus.py --inf MC --format json
 ```
+
+Query against items where the `confidence` metadata value that you've defined is `2`:
+
+```
+python syllabus.py --confidence 2
+```
+
+...or where it's between 1 and 3:
+
+```
+python syllabus.py --confidence "[1-3]"
+```
+
