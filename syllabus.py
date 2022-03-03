@@ -15,6 +15,7 @@ skill = ''
 linenum = 0
 debug = False
 skillmeta = False
+metakeys = []
 
 with open( infile, 'r' ) as f:
   for line in f.read().splitlines():
@@ -68,13 +69,15 @@ with open( infile, 'r' ) as f:
     # Skill metadata
     m = re.search(r'^ ?- ([a-z_0-9]+):([a-z0-9_, ]+)$', line, re.I)
     if m and skillmeta:
+      mname = m.group(1).lower()
       if m.group(1) in ['ICE','ACE']:
         k = 'how_examined'
       else:
         k = 'meta'
+        metakeys.append(mname)
       if ',' in m.group(2): v = [x.strip() for x in m.group(2).split(',')]
       else: v = m.group(2).strip()
-      data['structure'][topic][skill][k][m.group(1).lower()] = v
+      data['structure'][topic][skill][k][mname] = v
       continue
 
     if len(line.strip()) > 0: skillmeta = False
@@ -89,11 +92,11 @@ with open( infile, 'r' ) as f:
     if topic != '' and skill != '':
       data['structure'][topic][skill]['notes'] += line + '\n'
 
+metakeys = list(set(metakeys))
 topicletters = [x[0] for x in data['structure'].keys()]
 
 parser = argparse.ArgumentParser(
-  description="A CLI front end for the CREST CCT Syllabus",
-  epilog="You can also use the name of any metadata field as an argument and these will be used to regex match against items with that value.\n\n e.g. if you have ` - confidence: 3` as one metadata field, that item will be returned if you pass `--confidence \"[2-4]\"` as a command line argument."
+  description="A CLI front end for the CREST CCT Syllabus"
 )
 parser.add_argument("-a", "--app", help="Show CCT App skills relevant to MC and/or P")
 parser.add_argument("-i", "--inf", help="Show CCT Inf skills relevant to MC and/or P")
@@ -102,16 +105,21 @@ parser.add_argument('-f', '--format', default='md', choices=['md','json'], help=
 parser.add_argument('-t', '--titlesonly', action='store_true', help='Output only the skill titles')
 parser.add_argument('-s', "--search", help="Search for text")
 
+for m in metakeys:
+  parser.add_argument('--'+m, metavar='REGEX', help='Search "'+m+'" metadata tag matching this regex')
+
+args = parser.parse_args()
+
 def metaname(astr):
   if astr.startswith('--'):
     astr = astr[2:]
   astr = astr.replace('-','_')
   return astr
 
-args, extras = parser.parse_known_args()
-
 # Search terms for metadata
-meta = {metaname(k):v for k,v in zip(extras[::2],extras[1::2])}
+meta = {k:v for k,v in vars(args).items() if k in metakeys}
+
+args = parser.parse_args()
 
 if not args.app and not args.inf:
   args.app = 'MC,P'
@@ -146,7 +154,11 @@ for topicname, topic in data['structure'].items():
     if len(meta) > 0:
       ok = True
       for k,v in meta.items():
+        if not v: continue
         k = k.lower()
+
+        # Handle value being a list 
+        if type( v ) is list: v = ','.join(v)
         if k not in skill['meta'] or not re.search( v, skill['meta'][k], re.I ):
           ok = False
       if not ok: continue
@@ -190,7 +202,11 @@ elif args.format == 'md':
       if args.titlesonly: continue
 
       for exam, measure in skill['how_examined'].items():
-        print(' - ' + exam + ': ' + ', '.join(measure))
+        print(' - ' + exam.upper() + ': ' + ', '.join(measure))
+
+      for k,v in skill['meta'].items():
+        if type( v ) is list: v = ', '.join(v)
+        print( ' - ' + k + ': ' + v )
 
       print('')
       for line in skill['details'].splitlines():
