@@ -111,7 +111,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
-- confidence: 2
+- confidence: 4
 
 > Knowledge of pertinent UK legal issues:
 >
@@ -128,111 +128,110 @@ Within the tables, the following acronyms apply:
 >
 > Awareness of sector-specific regulatory issues.
 
- - Revelant Key legislation:
-   - TA 1968 Section: Intent to do unlawful damange to contents of building
-   - CMA 1990 Section 1: Unauthorised access to a computer
-   - HRA 1998 Article 8: Right to respect for private life
-   - DPA 1998:
-     - Section 7: People can request to view data an org holds on them
-     - Section 10: Data cannot be used for damage or distress
-     - Section 11: Data cannot be used for direct marketing
-     - Section 14: Request destruction of data
-     - Schedule 1: How data is collected / held
-     - Exceptions:
-       - Section 28: In case of National Security
-       - Section 29: Crime and tax
-       - Section 36: Domestic use 
-   - PJA 2006:
-     - Section 35: Unauthorised access to computer material
-     - Section 36: Unauthorised intent to impair operation
-     - Section 37: Making, supplying, obtaining articles for use in computer misuse offences
-     - Section 38: Transitional and saving provision
-   - GDPR 2018 Article 15: Subject Access Requests free
-   - DPA 2018: De-anonymising and unlawfully obtaining data now criminal offences
+#### Revelant Key legislation:
 
- - Theft Act 1968
-   - Section 9: Guilty if trespassing in a building with intent to do unlawful damage to a building or contents in it.
+- CMA 1990 Section 1: Unauthorised access to a computer
+- HRA 1998 Article 8: Right to respect for private life, how data is held and protected
+- DPA 1998:
+  - Section 7: People can request to view data an org holds on them
+  - Section 10: Data cannot be used for damage or distress
+  - Section 11: Data cannot be used for direct marketing
+  - Section 14: Request destruction of data
+  - Schedule 1: How data is collected / held
+  - Exceptions:
+    - Section 28: In case of National Security
+    - Section 29: Crime and tax
+    - Section 36: Domestic use 
+- PJA 2006:
+  - Section 35: Unauthorised access to computer material
+  - Section 36: Unauthorised intent to impair operation
+  - Section 37: Making, supplying, obtaining articles for use in computer misuse offences
+  - Section 38: Transitional and saving provision
+- GDPR 2018 Article 15: Subject Access Requests free
+- DPA 2018: De-anonymising and unlawfully obtaining data now criminal offences
 
- - Computer Misuse Act 1990
-   - Created out of necessity as no existing laws covered computer misuse after R v Gold & Schifreen case successfully appealed forgery and counterfeiting convictions
-   - Jurisdiction if computer OR person is in UK at time of offence
-   - Section 1: Unauthorised access to a computer 
-     - Guilty if:
-       - Intent to secure access to any program or data held in any computer
-       - Access he intends to secure is unauthorised
-       - He *knows* at the time that this is the case
-     - Punishable by £5000 or 6 months imprisonment
-     - Knowledge and intent
-     - Attempt sufficient
-     - No requirement to show damages
-   - Section 2: Unauthorised access to a computer to commit further offences
-     - More serious crime
-     - e.g. blackmailer hacking to find evidence of affair
-     - Serious crime doesn't have to be carried out, just intent to do so
-     - 5 years / unlimited fine
-   - Section 3: Unauthorised acts with intent to impair/modification of computer
-     - Intent and knowledge to be guilty
-     - Virus, ransomware, DoS
-     - Max 5 years, unlimited fine
+#### Computer Misuse Act 1990
 
- - Criminal Justice Act 1998
-   - Amended Computer Misuse Act
-   - Actually just seems to have removed some subsections
+- Created out of necessity as no existing laws covered computer misuse after R v Gold & Schifreen case successfully appealed forgery and counterfeiting convictions
+- Jurisdiction if computer OR person is in UK at time of offence
+- Section 1: Unauthorised access to a computer 
+  - Guilty if:
+    - Intent to secure access to any program or data held in any computer
+    - Access he intends to secure is unauthorised
+    - He *knows* at the time that this is the case
+  - Punishable by £5000 or 6 months imprisonment
+  - Knowledge and intent
+  - Attempt sufficient
+  - No requirement to show damages
+- Section 2: Unauthorised access to a computer to commit further offences
+  - More serious crime
+  - e.g. blackmailer hacking to find evidence of affair
+  - Serious crime doesn't have to be carried out, just intent to do so
+  - 5 years / unlimited fine
+- Section 3: Unauthorised acts with intent to impair/modification of computer
+  - Intent and knowledge to be guilty
+  - Virus, ransomware, DoS
+  - Max 5 years, unlimited fine
 
- - Human Rights Act 1998
-   - Derived from European Convention on Human Rights
-   - Ability to argue human rights in a British court with the delay and cost of going to European court
-   - Technically only applies to public bodies, but can be used between citizens as it applies to the court, which is a public body and the judge therefore must act in compatibility with it
-   - Article 8: Right to respect for private and family life
-     - Everyone has the right to respect for **his private and family life**, his home and **his correspondence**.
-     - There shall be no interference by a public authority with the exercise of this right except such as is in accordance with the law and is necessary in a democratic society in the interests of national security, public safety or the **economic well-being of the country**, for the **prevention of disorder or crime**, for the protection of health or morals, or for the **protection of the rights and freedoms of others**.
-     - Private life defined as:
-       - Your sexuality
-       - Your body
-       - Personal identity
-       - **How personal information is held and protected**
-     - Breaches might include:
-       - Surveillance of home
-       - Phone tapping, monitoring emails and internet, CCTV
-       - Disclosing personal information to others without consent
-   - An individual can be monitored on behalf of their company due to exceptions in place in the Data Protection Act (1998) - performance of a contract, assuming their employment contract states this
+#### Criminal Justice Act 1998
 
- - Data protection act 1998
-   - Replaced Data Protection Act 1984, Access to Personal Files Act 1987
-   - Implemented EU Data Protection Directive 1995
-   - Scope
-     - Personal data = anything identifying
-       - Name and address, phone, email
-     - Rights
-       - View data an organisation holds on them (section 7) for a modest fee
-       - Request correction to that data or have it destroyed (section 14)
-       - Data cannot be used in any way to cause damage or distress (section 10)
-       - Cannot be used for direct marketing (section 11)
-   - Principles (schedule 1)
-     - Must be processed and obtained lawfully
-     - Must be obtained only for lawful purposes
-     - Adequate, relevant and not excessive
-     - Accurate, up to date
-     - Not kept longer than necessary
-     - Appropriate technical measures against accidental processing, loss, damage to data
-     - Cannot be transferred outside the EEA unless equivalent laws are in place in that country
-   - Conditions
-     - Consent
-     - Performance of a contract 
-     - Legal obligation
-     - Necessary to protect vital interests of the data subject
-     - Necessary to carry out public functions
-   - Exceptions
-     - National security (section 28)
-     - Crime and tax (section 29)
-     - Domestic purposes - your own family (section 36)
-   - Individuals can make a Subject Access Request to get all data about them from an organisation for £10
-     - Following GDPR, this is now free
+- Amended Computer Misuse Act
+- Actually just seems to have removed some subsections
 
+#### Human Rights Act 1998
+
+- Derived from European Convention on Human Rights
+- Ability to argue human rights in a British court with the delay and cost of going to European court
+- Technically only applies to public bodies, but can be used between citizens as it applies to the court, which is a public body and the judge therefore must act in compatibility with it
+- Article 8: Right to respect for private and family life
+  - Everyone has the right to respect for **his private and family life**, his home and **his correspondence**.
+  - There shall be no interference by a public authority with the exercise of this right except such as is in accordance with the law and is necessary in a democratic society in the interests of national security, public safety or the **economic well-being of the country**, for the **prevention of disorder or crime**, for the protection of health or morals, or for the **protection of the rights and freedoms of others**.
+  - Private life defined as:
+    - Your sexuality
+    - Your body
+    - Personal identity
+    - **How personal information is held and protected**
+  - Breaches might include:
+    - Surveillance of home
+    - Phone tapping, monitoring emails and internet, CCTV
+    - Disclosing personal information to others without consent
+- An individual can be monitored on behalf of their company due to exceptions in place in the Data Protection Act (1998) - performance of a contract, assuming their employment contract states this
+
+#### Data protection act 1998
+
+- Replaced Data Protection Act 1984, Access to Personal Files Act 1987
+- Implemented EU Data Protection Directive 1995
+- Scope
+  - Personal data = anything identifying
+    - Name and address, phone, email
+  - Rights
+    - View data an organisation holds on them (section 7) for a modest fee
+    - Request correction to that data or have it destroyed (section 14)
+    - Data cannot be used in any way to cause damage or distress (section 10)
+    - Cannot be used for direct marketing (section 11)
+- Principles (schedule 1)
+  - Must be processed and obtained lawfully
+  - Must be obtained only for lawful purposes
+  - Adequate, relevant and not excessive
+  - Accurate, up to date
+  - Not kept longer than necessary
+  - Appropriate technical measures against accidental processing, loss, damage to data
+  - Cannot be transferred outside the EEA unless equivalent laws are in place in that country
+- Conditions
+  - Consent
+  - Performance of a contract 
+  - Legal obligation
+  - Necessary to protect vital interests of the data subject
+  - Necessary to carry out public functions
+- Exceptions
+  - National security (section 28)
+  - Crime and tax (section 29)
+  - Domestic purposes - your own family (section 36)
+- Individuals can make a Subject Access Request to get all data about them from an organisation for £10
+  - Following GDPR, this is now free
  - Freedom of Information Act 2000
    - Modified DPA for public bodies
    - Not really relevant to private organisations
-
  - Police and Justice Act 2006
    - Amends Computer Misuse Act
    - Extension of Police Act 1996 to include:
@@ -241,57 +240,59 @@ Within the tables, the following acronyms apply:
      - Section 37: Making, supplying, obtaining articles for use in computer misuse offences
      - Section 38: Transitional and saving provision
 
- - GDPR 2018
-   - EU legislation
-   - Data Protection Principles
-     - Processed fairly and lawfully
-     - Collected for specified legitimate and explicit purposes
-     - Limited to what is necessary
-     - Accurate and up-to-date
-     - Kept no longer than necessary
-     - Processed with appropriate security (based on risk assessments)
-   - Personal data
-   - All companies knowingly dealing with EU citizens must comply
-   - Terms
-     - Data Subject
-     - Data Controller
-     - Data Processor
-     - Portability
-     - Rectification
-     - Erasure
-   - Lawful basis to process data
-     - Consent
-     - Performance of a Contract
-     - Legal Necessity
-     - Vital Interests (life saving)
-     - Public Interest
-     - Legitimate Interest (e.g. customer relationship)
-   - Requesting personal data (access request) is now free, can be via any channel
-     - Article 15 
+#### GDPR 2018
 
- - Data Protection Act 2018
-   - Adds to GDPR
-   - Criminalises offenses relating to personal data
-     - Unlawfully obtaining personal data
-     - Re-identification of de-identified personal data
+- EU legislation
+- Data Protection Principles
+  - Processed fairly and lawfully
+  - Collected for specified legitimate and explicit purposes
+  - Limited to what is necessary
+  - Accurate and up-to-date
+  - Kept no longer than necessary
+  - Processed with appropriate security (based on risk assessments)
+- Personal data
+- All companies knowingly dealing with EU citizens must comply
+- Terms
+  - Data Subject
+  - Data Controller
+  - Data Processor
+  - Portability
+  - Rectification
+  - Erasure
+- Lawful basis to process data
+  - Consent
+  - Performance of a Contract
+  - Legal Necessity
+  - Vital Interests (life saving)
+  - Public Interest
+  - Legitimate Interest (e.g. customer relationship)
+- Requesting personal data (access request) is now free, can be via any channel
+  - Article 15 
 
- - CREST code of conduct
-   - 2.1 Promotion of good practices
-   - 2.2 Professional representation
-   - 2.3 CREST assignments
-     - Act professionally
-     - Use appropriate tools and techniques
-   - 2.4 Regulations must be followed
-   - 2.5 Must maintain technical competencies
-   - 2.6 Respect the interests of the client
-   - 2.7 Sanctions may include, barring, revocation of qualifications, legal action
-   - 2.8 Ethics
-     - Honesty
-     - Prohibition of bribery
-     - Fair competition
-     - Integrity
-     - Compliance - bring any breach to attention of CREST
+#### Data Protection Act 2018
 
+- Adds to GDPR
+- Criminalises offenses relating to personal data
+  - Unlawfully obtaining personal data
+  - Re-identification of de-identified personal data
+
+#### CREST code of conduct
+
+- 2.1 Promotion of good practices
+- 2.2 Professional representation
+- 2.3 CREST assignments
+  - Act professionally
+  - Use appropriate tools and techniques
+- 2.4 Regulations must be followed
+- 2.5 Must maintain technical competencies
+- 2.6 Respect the interests of the client
+- 2.7 Sanctions may include, barring, revocation of qualifications, legal action
+- 2.8 Ethics
+  - Honesty
+  - Prohibition of bribery
+  - Fair competition
+  - Integrity
+  - Compliance - bring any breach to attention of CREST
  - Complaints procedure
    - Principles
      - Investigated competently, diligently, impartially
@@ -523,7 +524,7 @@ nmap -O
 
 - ACE: MC
 - ICE: MC
-- confidence: 1
+- confidence: 3
 
 > File permission attributes within Unix and Windows file systems and their security implications.
 >
@@ -548,19 +549,169 @@ nmap -O
 
 #### Windows File Permissions
 
+From <https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)?redirectedfrom=MSDN>
 
+| Permission           | Meaning for Folders                                          | Meaning for Files                                            |
+| :------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| Read                 | Permits viewing and listing of files and subfolders          | Permits viewing or accessing of the file's contents          |
+| Write                | Permits adding of files and subfolders                       | Permits writing to a file                                    |
+| Read & Execute       | Permits viewing and listing of files and subfolders as well as executing of files; inherited by files and folders | Permits viewing and accessing of the file's contents as well as executing of the file |
+| List Folder Contents | Permits viewing and listing of files and subfolders as well as executing of files; inherited by folders only | N/A                                                          |
+| Modify               | Permits reading and writing of files and subfolders; allows deletion of the folder | Permits reading and writing of the file; allows deletion of the file |
+| Full Control         | Permits reading, writing, changing, and deleting of files and subfolders | Permits reading, writing, changing and deleting of the file  |
+
+| Control                      | Full Modify | Execute | Read & Read | Write | Special Permissions |
+| :--------------------------- | :---------- | :------ | :---------- | :---- | :------------------ |
+| Traverse Folder/Execute File | X           | X       | X           |       |                     |
+| List Folder/Read Data        | X           | X       | X           | X     |                     |
+| Read Attributes              | X           | X       | X           | X     |                     |
+| Read Extended Attributes     | X           | X       | X           | X     |                     |
+| Create Files/Write Data      | X           | X       |             |       | X                   |
+| Create Folders/Append Data   | X           | X       |             |       | X                   |
+| Write Attributes             | X           | X       |             |       | X                   |
+| Write Extended Attributes    | X           | X       |             |       | X                   |
+| Delete Subfolders and Files  | X           |         |             |       |                     |
+| Delete                       | X           | X       |             |       |                     |
+| Read Permissions             | X           | X       | X           | X     | X                   |
+| Change Permissions           | X           |         |             |       |                     |
+| Take Ownership               | X           |         |             |       |                     |
 
 ### B14 Audit Techniques
 
 - ACE: MC
 - ICE: MC, P
-- confidence: 1
+- confidence: 4
 
 > Listing processes and their associated network sockets (if any).
 >
 > Assessing patch levels.
 >
 > Finding interesting files.
+
+#### Listing Network Sockets
+
+##### Linux
+
+All listening TCP services (as root to see process name)
+
+```
+netstat -tlpn 
+```
+
+Useful switches:
+
+| Switch      | Description                                                  |
+| ----------- | ------------------------------------------------------------ |
+| `-t` / `-u` | TCP / UDP only                                               |
+| `-n`        | Express everything as numerical rather than resolving hosts, guessing services |
+| `-a`        | "All": Both listening and non-listening sockets              |
+| `-l`        | Listening sockets only                                       |
+| -p          | Show the program (only your own are named if you're not root) |
+
+##### Windows
+
+As with Linux, except:
+
+| Linux       | Windows             |
+| ----------- | ------------------- |
+| `-t` / `-u` | `-p tcp` / `-p udp` |
+| `-p`        | `-b`                |
+| `-l`        | n/a                 |
+
+#### Getting Patch Level
+
+##### Linux
+
+Kernel version, release, OS:
+
+```
+uname -a
+```
+
+Often sufficient to:
+
+```
+cat /etc/issue
+```
+
+Packages:
+
+<https://www.unix.com/linux/111490-os-patch-level-command.html>:
+
+- RPM based (SuSE, Fedora, RHEL, CentOS, ...): rpm -qa
+-  DEB based (Debian, Ubuntu, ...): aptitude search ~i
+-  Portage based (Gentoo, ...): equery list (provided by gentoolkit)
+-  Slackware, LFS: your brain and/or any notes you kept :laughing:
+
+##### Windows
+
+OS version:
+
+```
+ver
+```
+
+All kinds of useful info
+
+```
+systeminfo
+```
+
+List updates / hotfixes
+
+```
+wmic qfe list
+```
+
+#### Interesting Files
+
+##### Linux
+
+setuid root files
+
+```
+find / -type f -perm -4000 -u root
+```
+
+Files with "secret" in the name (for example)
+
+```
+find / -type f -iname "*secret*"
+```
+
+Files that get created after you have just done something
+
+```bash
+touch /tmp/f
+# Then do a thing
+find / -newer /tmp/f
+```
+
+Find a file containing a specific phrase, even if it's a binary file
+
+```
+grep -air "password"
+```
+
+##### Windows
+
+List drives
+
+```
+wmic logicaldisk get caption
+```
+
+Find all files with "secret" in the name on C:\
+
+```
+dir /a /s /b c:\*secret*
+```
+
+Find all files containing "password"
+
+```
+findstr /si password *
+```
 
 ## Appendix C: Background Information Gathering & Open Source
 
