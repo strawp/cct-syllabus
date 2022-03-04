@@ -303,7 +303,7 @@ Within the tables, the following acronyms apply:
 >
 > Finding interesting files.
 
-## Appendix C: Background Information Gathering & Open Source
+## Appendix C: Background Information Gathering & Open Source
 
 ### C1 Registration Records
 
@@ -311,7 +311,6 @@ Within the tables, the following acronyms apply:
 - ICE: MC
 
 > Information contained within IP and domain registries (WHOIS).
->
 
 ### C2 Domain Name Server (DNS)
 
@@ -347,7 +346,6 @@ Within the tables, the following acronyms apply:
 - ICE: MC
 
 > Analysis of information from a target web site, both from displayed content and from within the HTML source.
->
 
 ### C4 Google Hacking and Web Enumeration
 
@@ -355,7 +353,6 @@ Within the tables, the following acronyms apply:
 - ICE: MC
 
 > Effective use of search engines and other public data sources to gain information about a target.
->
 
 ### C5 NNTP Newsgroups and Mailing Lists
 
@@ -363,7 +360,6 @@ Within the tables, the following acronyms apply:
 - ICE: MC
 
 > Searching newsgroups or mailing lists for useful information about a target.
->
 
 ### C6 Information Leakage from Mail & News Headers
 
@@ -371,9 +367,8 @@ Within the tables, the following acronyms apply:
 - ICE: MC
 
 > Analysing news group and e-mail headers to identify internal system information.
->
 
-## Appendix D: Networking Equipment
+## Appendix D: Networking Equipment
 
 ### D1 Management Protocols
 
@@ -481,9 +476,9 @@ Within the tables, the following acronyms apply:
 > Interpreting the configuration of other manufacturers’ devices
 >
 
-## Appendix E: Microsoft Windows Security Assessment
+## Appendix E: Microsoft Windows Security Assessment
 
-### E1 Domain Reconnaissance
+### E1 Domain Reconnaissance
 
 - ACE: MC
 - ICE: MC, P
@@ -566,7 +561,7 @@ Within the tables, the following acronyms apply:
 > - MBSA
 >
 
-### Desktop Lockdown
+### E7 Desktop Lockdown
 
 - ACE: MC
 - ICE: MC, P
@@ -590,7 +585,7 @@ Within the tables, the following acronyms apply:
 
 > Knowledge of significant vulnerabilities in common windows applications for which there is public exploit code available.
 
-## Appendix F: Unix Security Assessment
+## Appendix F: Unix Security Assessment
 
 ### F1 User enumeration
 
@@ -713,7 +708,7 @@ Within the tables, the following acronyms apply:
 >
 > Authentication mechanisms within SSH
 
-## Appendix G: Web Technologies
+## Appendix G: Web Technologies
 
 ### G1 Web Server Operation
 
@@ -764,9 +759,8 @@ Within the tables, the following acronyms apply:
 - ICE: MC
 
 > Web mark-up languages: HTML and XML.
->
-> G6 Web Programming Languages
->
+
+### G6 Web Programming Languages
 
 - ACE: MC
 - ICE: MC
@@ -803,7 +797,7 @@ Within the tables, the following acronyms apply:
 > - Java Applets
 > - Decompilation of client-side code
 
-## Appendix H: Web Testing Methodologies
+## Appendix H: Web Testing Methodologies
 
 ### H1 Web Application Reconnaissance
 
@@ -936,7 +930,7 @@ Within the tables, the following acronyms apply:
 
 > Common techniques for identifying and reviewing deficiencies in the areas of security.
 
-## Appendix I: Web Testing Techniques
+## Appendix I: Web Testing Techniques
 
 ### I1 Web Site Structure Discovery
 
