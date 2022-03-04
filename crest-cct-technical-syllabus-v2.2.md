@@ -97,6 +97,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 5
 
 > Benefits and utility of penetration testing to the client.
 >
@@ -110,6 +111,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 2
 
 > Knowledge of pertinent UK legal issues:
 >
@@ -126,10 +128,197 @@ Within the tables, the following acronyms apply:
 >
 > Awareness of sector-specific regulatory issues.
 
+ - Revelant Key legislation:
+   - TA 1968 Section: Intent to do unlawful damange to contents of building
+   - CMA 1990 Section 1: Unauthorised access to a computer
+   - HRA 1998 Article 8: Right to respect for private life
+   - DPA 1998:
+     - Section 7: People can request to view data an org holds on them
+     - Section 10: Data cannot be used for damage or distress
+     - Section 11: Data cannot be used for direct marketing
+     - Section 14: Request destruction of data
+     - Schedule 1: How data is collected / held
+     - Exceptions:
+       - Section 28: In case of National Security
+       - Section 29: Crime and tax
+       - Section 36: Domestic use 
+   - PJA 2006:
+     - Section 35: Unauthorised access to computer material
+     - Section 36: Unauthorised intent to impair operation
+     - Section 37: Making, supplying, obtaining articles for use in computer misuse offences
+     - Section 38: Transitional and saving provision
+   - GDPR 2018 Article 15: Subject Access Requests free
+   - DPA 2018: De-anonymising and unlawfully obtaining data now criminal offences
+
+ - Theft Act 1968
+   - Section 9: Guilty if trespassing in a building with intent to do unlawful damage to a building or contents in it.
+
+ - Computer Misuse Act 1990
+   - Created out of necessity as no existing laws covered computer misuse after R v Gold & Schifreen case successfully appealed forgery and counterfeiting convictions
+   - Jurisdiction if computer OR person is in UK at time of offence
+   - Section 1: Unauthorised access to a computer 
+     - Guilty if:
+       - Intent to secure access to any program or data held in any computer
+       - Access he intends to secure is unauthorised
+       - He *knows* at the time that this is the case
+     - Punishable by £5000 or 6 months imprisonment
+     - Knowledge and intent
+     - Attempt sufficient
+     - No requirement to show damages
+   - Section 2: Unauthorised access to a computer to commit further offences
+     - More serious crime
+     - e.g. blackmailer hacking to find evidence of affair
+     - Serious crime doesn't have to be carried out, just intent to do so
+     - 5 years / unlimited fine
+   - Section 3: Unauthorised acts with intent to impair/modification of computer
+     - Intent and knowledge to be guilty
+     - Virus, ransomware, DoS
+     - Max 5 years, unlimited fine
+
+ - Criminal Justice Act 1998
+   - Amended Computer Misuse Act
+   - Actually just seems to have removed some subsections
+
+ - Human Rights Act 1998
+   - Derived from European Convention on Human Rights
+   - Ability to argue human rights in a British court with the delay and cost of going to European court
+   - Technically only applies to public bodies, but can be used between citizens as it applies to the court, which is a public body and the judge therefore must act in compatibility with it
+   - Article 8: Right to respect for private and family life
+     - Everyone has the right to respect for **his private and family life**, his home and **his correspondence**.
+     - There shall be no interference by a public authority with the exercise of this right except such as is in accordance with the law and is necessary in a democratic society in the interests of national security, public safety or the **economic well-being of the country**, for the **prevention of disorder or crime**, for the protection of health or morals, or for the **protection of the rights and freedoms of others**.
+     - Private life defined as:
+       - Your sexuality
+       - Your body
+       - Personal identity
+       - **How personal information is held and protected**
+     - Breaches might include:
+       - Surveillance of home
+       - Phone tapping, monitoring emails and internet, CCTV
+       - Disclosing personal information to others without consent
+   - An individual can be monitored on behalf of their company due to exceptions in place in the Data Protection Act (1998) - performance of a contract, assuming their employment contract states this
+
+ - Data protection act 1998
+   - Replaced Data Protection Act 1984, Access to Personal Files Act 1987
+   - Implemented EU Data Protection Directive 1995
+   - Scope
+     - Personal data = anything identifying
+       - Name and address, phone, email
+     - Rights
+       - View data an organisation holds on them (section 7) for a modest fee
+       - Request correction to that data or have it destroyed (section 14)
+       - Data cannot be used in any way to cause damage or distress (section 10)
+       - Cannot be used for direct marketing (section 11)
+   - Principles (schedule 1)
+     - Must be processed and obtained lawfully
+     - Must be obtained only for lawful purposes
+     - Adequate, relevant and not excessive
+     - Accurate, up to date
+     - Not kept longer than necessary
+     - Appropriate technical measures against accidental processing, loss, damage to data
+     - Cannot be transferred outside the EEA unless equivalent laws are in place in that country
+   - Conditions
+     - Consent
+     - Performance of a contract 
+     - Legal obligation
+     - Necessary to protect vital interests of the data subject
+     - Necessary to carry out public functions
+   - Exceptions
+     - National security (section 28)
+     - Crime and tax (section 29)
+     - Domestic purposes - your own family (section 36)
+   - Individuals can make a Subject Access Request to get all data about them from an organisation for £10
+     - Following GDPR, this is now free
+
+ - Freedom of Information Act 2000
+   - Modified DPA for public bodies
+   - Not really relevant to private organisations
+
+ - Police and Justice Act 2006
+   - Amends Computer Misuse Act
+   - Extension of Police Act 1996 to include:
+     - Section 35: Unauthorised access to computer material
+     - Section 36: Unauthorised intent to impair operation
+     - Section 37: Making, supplying, obtaining articles for use in computer misuse offences
+     - Section 38: Transitional and saving provision
+
+ - GDPR 2018
+   - EU legislation
+   - Data Protection Principles
+     - Processed fairly and lawfully
+     - Collected for specified legitimate and explicit purposes
+     - Limited to what is necessary
+     - Accurate and up-to-date
+     - Kept no longer than necessary
+     - Processed with appropriate security (based on risk assessments)
+   - Personal data
+   - All companies knowingly dealing with EU citizens must comply
+   - Terms
+     - Data Subject
+     - Data Controller
+     - Data Processor
+     - Portability
+     - Rectification
+     - Erasure
+   - Lawful basis to process data
+     - Consent
+     - Performance of a Contract
+     - Legal Necessity
+     - Vital Interests (life saving)
+     - Public Interest
+     - Legitimate Interest (e.g. customer relationship)
+   - Requesting personal data (access request) is now free, can be via any channel
+     - Article 15 
+
+ - Data Protection Act 2018
+   - Adds to GDPR
+   - Criminalises offenses relating to personal data
+     - Unlawfully obtaining personal data
+     - Re-identification of de-identified personal data
+
+ - CREST code of conduct
+   - 2.1 Promotion of good practices
+   - 2.2 Professional representation
+   - 2.3 CREST assignments
+     - Act professionally
+     - Use appropriate tools and techniques
+   - 2.4 Regulations must be followed
+   - 2.5 Must maintain technical competencies
+   - 2.6 Respect the interests of the client
+   - 2.7 Sanctions may include, barring, revocation of qualifications, legal action
+   - 2.8 Ethics
+     - Honesty
+     - Prohibition of bribery
+     - Fair competition
+     - Integrity
+     - Compliance - bring any breach to attention of CREST
+
+ - Complaints procedure
+   - Principles
+     - Investigated competently, diligently, impartially
+     - Not reviewed by any subjects of the complaint
+     - 8 weeks resolution
+     - Issues should be resolved with members as first point, only referred to CREST as a last resort
+   - Measures
+     - CREST makes complaints process known to client, NDA signed
+     - Formal complaint provided in agreed format
+     - Member notified of complaint
+     - Complaint reviewed against code of conduct
+     - Viewpoint report to member
+     - Response to report
+     - CREST president gives set of actions and dates
+     - Legal action or qualification revoked: CREST Executive involved, further NDAs
+     - Industry experts may be involved
+     - Recommendation report issued to member
+     - Summary report to client
+     - If CHECK and suspension, may inform CESG / NCSC
+     - Recommendations enacted
+     - Notice given to client when measures concluded
+
 ### A3 Scoping
 
 - ACE: MC
 - ICE: MC
+- confidence: 5
 
 > Understanding client requirements.
 >
@@ -143,6 +332,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 3
 
 > Knowledge of additional risks that penetration testing can present.
 >
@@ -150,10 +340,22 @@ Within the tables, the following acronyms apply:
 >
 > Effective planning for potential DoS conditions.
 
+How are risks planned / managed in an engagement
+
+- Experience, common sense
+- Ensure client understands inherent risks of assurance testing
+- Always live systems
+- Tiered architecture
+  - Primary: Target systems, just try and be read only, get authority
+  - Secondary: Servers, won't try and abuse, need authority
+  - Tertiary: Laptops, desktops are tertiary systems - do whatever
+- Agreed escalation path to communicate issues
+
 ### A5 Record Keeping, Interim Reporting & Final Results
 
 - ACE: MC, P
 - ICE: MC, P
+- confidence: 4
 
 > Understanding reporting requirements.
 >
@@ -167,6 +369,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 3
 
 > IP protocols: IPv4 and IPv6, TCP, UDP and ICMP.
 >
@@ -176,6 +379,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 4
 
 > Varying networks types that could be encountered during a penetration test:
 >
@@ -192,6 +396,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 3
 
 > Network routing protocols RIP, OSPF, and IGRP/EIGRP.
 
@@ -199,6 +404,8 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC, P
+- confidence: 2
+- todo: nmap flags cheatsheet
 
 > Analysis of output from tools used to map the route between the engagement point and a number of targets.
 >
@@ -208,6 +415,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 3
 
 > Interpreting output from port scanners, network sniffers and other network enumeration tools.
 
@@ -215,6 +423,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 3
 
 > The importance of egress and ingress filtering, including the risks associated with outbound connections.
 
@@ -222,40 +431,65 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 3
 
 > Packet crafting to meet a particular requirement:
 >
 > - Modifying source ports
->
-> - Spoofing IP addresses
->
+>- Spoofing IP addresses
 > - Manipulating TTL’s
->
-> - Fragmentation
->
+>- Fragmentation
 > - Generating ICMP packets
->
+
+Nmap options (<https://nmap.org/book/man-bypass-firewalls-ids.html>):
+
+| Function                                                     | Command line switches |
+| ------------------------------------------------------------ | --------------------- |
+| Fragment packets                                             | `-f`                  |
+| Decoy scans (make it look like other hosts are also scanning) | `-D <host>,<host>`    |
+| Spoof source address                                         | `-S <ipaddress>`      |
+| Spoof source port                                            | `-g / --source-port`  |
+| Set time-to-live value                                       | `--ttl <value>`       |
+| Ping scan                                                    | `-sn`                 |
+| TCP SYN scan                                                 | `-PS<ports>`          |
+| TCP ACK scan                                                 | -`PA<ports>`          |
+| UDP ping                                                     | `-PU<ports>`          |
+| ARP Scan                                                     | `-PR`                 |
+| Skip host discovery                                          | `-Pn`                 |
+
+
 
 ### B8 OS Fingerprinting
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 4
 
 > Remote operating system fingerprinting; active and passive techniques.
+
+nmap OS Detection from <https://nmap.org/book/man-os-detection.html>
+
+```
+nmap -O
+```
 
 ### B9 Application Fingerprinting and Evaluating Unknown Services
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 2
 
 > Determining server types and network application versions from application banners.
 >
 > Evaluation of responsive but unknown network applications.
 
+
+
 ### B10 Network Access Control Analysis
 
 - ACE: MC
 - ICE: MC
+- confidence: 2
 
 > Reviewing firewall rule bases and network access control lists.
 
@@ -263,6 +497,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC
+- confidence: 3
 
 > Differences between encryption and encoding.
 >
@@ -278,6 +513,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 3
 
 > SSL, IPsec, SSH, PGP
 >
@@ -287,15 +523,38 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 1
 
 > File permission attributes within Unix and Windows file systems and their security implications.
 >
 > Analysing registry ACLs.
 
+#### Linux / Unix Permissions
+
+`[owner][group][other]`
+
+| Number |              Octal Permission Representation              | Ref  |
+| :----: | :-------------------------------------------------------: | :--: |
+|   0    |                       No permission                       | ---  |
+| **1**  |                    Execute permission                     | --x  |
+| **2**  |                     Write permission                      | -w-  |
+|   3    | Execute and write permission: 1 (execute) + 2 (write) = 3 | -wx  |
+| **4**  |                      Read permission                      | r--  |
+|   5    |  Read and execute permission: 4 (read) + 1 (execute) = 5  | r-x  |
+|   6    |    Read and write permission: 4 (read) + 2 (write) = 6    | rw-  |
+|   7    |  All permissions: 4 (read) + 2 (write) + 1 (execute) = 7  | rwx  |
+|  2000  |                        setgid bit                         | s--- |
+|  4000  |                        setuid bit                         | s--- |
+
+#### Windows File Permissions
+
+
+
 ### B14 Audit Techniques
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 1
 
 > Listing processes and their associated network sockets (if any).
 >
@@ -309,14 +568,19 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 5
 
 > Information contained within IP and domain registries (WHOIS).
->
+
+Compared with what this was when the syllabus was written, this is dead.
+
+*However* you can determine ownership of IP blocks by organisation through WHOIS still. This provides an attack surface.
 
 ### C2 Domain Name Server (DNS)
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 3
 
 > DNS queries and responses
 >
@@ -345,6 +609,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC
+- confidence: 5
 
 > Analysis of information from a target web site, both from displayed content and from within the HTML source.
 >
@@ -353,25 +618,34 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 5
 
 > Effective use of search engines and other public data sources to gain information about a target.
->
+
+Determine presence of backup files, login pages, backdoors previously installed etc.
 
 ### C5 NNTP Newsgroups and Mailing Lists
 
 - ACE: MC
 - ICE: MC
+- confidence: 4
 
 > Searching newsgroups or mailing lists for useful information about a target.
->
+
+User agent, source IP
 
 ### C6 Information Leakage from Mail & News Headers
 
 - ACE: MC
 - ICE: MC
+- confidence: 4
 
 > Analysing news group and e-mail headers to identify internal system information.
->
+
+Bounced email
+
+- Leaked mail filter software
+- Internal hostnames
 
 ## Appendix D: Networking Equipment
 
@@ -379,6 +653,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 3
 
 > Weaknesses in the protocols commonly used for the remote management of devices:
 >
@@ -401,6 +676,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 4
 
 > Techniques for local network traffic analysis.
 >
@@ -410,6 +686,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 2
 
 > Security issues relating to the networking protocols:
 >
@@ -434,14 +711,21 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 3
 
 > Enumeration and fingerprinting of devices running IPSec services.
->
+
+- Integrated into IPv6
+- Every packet is authenticated and encrypted
+- OSI layer 3 (network)
+- Internet Key Exchange (IKE) over UDP 500
 
 ### D5 VoIP
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 2
+- todo: List common ports config, SIP methods
 
 > Enumeration and fingerprinting of devices running VoIP services.
 >
@@ -452,24 +736,37 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 3
+- todo: re-read some of the attacks
 
 > Enumeration and fingerprinting of devices running Wireless (802.11) services.
 >
 > Knowledge of various options for encryption and authentication, and the relative methods of each.
 >
 > - WEP
->
-> - TKIP
->
+>- TKIP
 > - WPA/WPA2
->
-> - EAP/LEAP/PEAP
->
+>- EAP/LEAP/PEAP
+> 
+
+ - WEP
+   - Replay attacks
+   - Forged ARP packets
+   - Fragmentation attack
+   - ChopChop attack
+   - -> Crack key
+ - WPA2 PSK
+   - Deauth / handshake capture
+   - Rogue AP / handshake capture
+ - WPA2 Ent
+   - hostapd-wpe rogue AP
+   - EAP relay
 
 ### D7 Configuration Analysis
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 2
 
 > Analysing configuration files from the following types of Cisco equipment:
 >
@@ -487,6 +784,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 2
 
 > Identifying domains/workgroups and domain membership within the target network.
 >
@@ -500,6 +798,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 2
 
 > Identifying user accounts on target systems and domains using NetBIOS, SNMP and LDAP.
 >
@@ -508,6 +807,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 2
 
 > Active Directory Roles (Global Catalogue, Master Browser, FSMO)
 >
@@ -519,6 +819,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC, P
+- confidence: 3
 
 > Password policies (complexity, lockout policies)
 >
@@ -532,6 +833,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC, P
+- confidence: 3
 
 > Knowledge of remote windows vulnerabilities, particularly those for which robust exploit code exists in the public domain.
 >
@@ -554,6 +856,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 2
 
 > Knowledge of common windows patch management strategies:
 >
@@ -566,10 +869,11 @@ Within the tables, the following acronyms apply:
 > - MBSA
 >
 
-### Desktop Lockdown
+### E7 Desktop Lockdown
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 3
 
 > Knowledge and understanding of techniques to break out of a locked down Windows desktop / Citrix environment.
 >
@@ -579,6 +883,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 3
 
 > Knowledge of common attack vectors for Microsoft Exchange Server.
 >
@@ -587,6 +892,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 2
 
 > Knowledge of significant vulnerabilities in common windows applications for which there is public exploit code available.
 
@@ -596,6 +902,8 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 3
+- todo: some bashfu for these archaic services
 
 > Discovery of valid usernames from network services commonly running by default:
 >
@@ -614,6 +922,8 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 3
+- todo: Fricken solaris vulns, seriously
 
 > Recent or commonly-found Solaris vulnerabilities, and in particular those for which there is exploit code in the public domain.
 >
@@ -638,6 +948,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 3
 
 > FTP access control
 >
@@ -649,6 +960,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 4
 
 > Valid username discovery via EXPN and VRFY
 >
@@ -660,6 +972,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 3
 
 > NFS security: host level (exports restricted to particular hosts) and file level (by UID and GID).
 >
@@ -671,6 +984,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 2
 
 > Berkeley r* service:
 >
@@ -685,6 +999,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 2
 
 > X Windows security and configuration; hostbased vs. user-based access control.
 >
@@ -693,6 +1008,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 2
 
 > RPC service enumeration
 >
@@ -704,6 +1020,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC, P
+- confidence: 4
 
 > Identify the types and versions of SSH software in use
 >
@@ -719,6 +1036,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 5
 
 > How a web server functions in terms of the client/server architecture.
 >
@@ -728,6 +1046,8 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC, P
+- confidence: 4
+- todo: Probably some ancient CVEs for Apache and IIS that nobody ever sees any more
 
 > Common web servers and their fundamental differences and vulnerabilities associated with them:
 >
@@ -740,6 +1060,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 5
 
 > Design of tiered architectures.
 >
@@ -751,6 +1072,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC, P
+- confidence: 4
 
 > Web protocols: HTTP, HTTPS, SOAP.
 >
@@ -762,14 +1084,15 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 5
 
 > Web mark-up languages: HTML and XML.
->
-> G6 Web Programming Languages
->
+
+### G6 Web Programming Languages
 
 - ACE: MC
 - ICE: MC
+- confidence: 5
 
 > Common web programming languages: JSP, ASP, PHP, CGI based Perl and JavaScript.
 >
@@ -778,6 +1101,8 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC
+- confidence: 3
+- todo: Some ancient CVEs for .NET, J2EE, Coldfusion, Ruby on Rails and AJAX.
 
 > Vulnerabilities in common application frameworks, servers and technologies: .NET, J2EE, Coldfusion, Ruby on Rails and AJAX.
 >
@@ -786,6 +1111,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC
+- confidence: 3
 
 > Application interfaces: CGI, ISAPI filters and Apache modules.
 >
@@ -794,6 +1120,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC
+- confidence: 3
 
 > Web architecture sub-components:
 >
@@ -809,6 +1136,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 5
 
 > Benefits of performing application reconnaissance.
 >
@@ -820,6 +1148,8 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 2
+- todo: basic threat modelling techniques
 
 > Simple threat modelling based on customer perception of risk.
 >
@@ -829,6 +1159,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC
+- confidence: 5
 
 > Examples of the type of information available in web page source that may prove useful to an attacker:
 >
@@ -849,6 +1180,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC
+- confidence: 4
 
 > Common pitfalls associated with the design and implementation of application authentication mechanisms.
 
@@ -856,6 +1188,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC
+- confidence: 4
 
 > Common pitfalls associated with the design and implementation of application authorisation mechanisms.
 >
@@ -864,6 +1197,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC
+- confidence: 5
 
 > The importance of input validation as part of a defensive coding strategy.
 >
@@ -873,6 +1207,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC
+- confidence: 5
 
 > Fuzzing and its relevance within web-app penetration testing.
 >
@@ -884,6 +1219,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC
 - ICE: MC
+- confidence: 5
 
 > How error messages may indicate or disclose useful information.
 >
@@ -892,6 +1228,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC
+- confidence: 5
 
 > Potential implications of a cross site scripting vulnerability.
 >
@@ -901,6 +1238,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC
+- confidence: 4
 
 > Potential implications of injection vulnerabilities:
 >
@@ -915,6 +1253,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC
+- confidence: 5
 
 > Common pitfalls associated with the design and implementation of session handling mechanisms.
 
@@ -922,6 +1261,8 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC
+- confidence: 3
+- todo: Re-learn all the TLS vulns that I've now forgotten about because they're boring
 
 > Common techniques used for encrypting data in transit and data at rest, either on the client or server side.
 >
@@ -933,6 +1274,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC
+- confidence: 4
 
 > Common techniques for identifying and reviewing deficiencies in the areas of security.
 
@@ -942,6 +1284,8 @@ Within the tables, the following acronyms apply:
 
 - ACE: P
 - ICE: MC
+- confidence: 4
+- todo: Wiki lab
 
 > Spidering tools and their relevance in a web application test for discovering linked content.
 >
@@ -953,6 +1297,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: P
 - ICE: MC
+- confidence: 5
 
 > Arbitrary JavaScript execution.
 >
@@ -964,6 +1309,8 @@ Within the tables, the following acronyms apply:
 
 - ACE: P
 - ICE: MC
+- confidence: 4
+- todo: MS SQL Server SQLi cheat sheet, tamper scripts
 
 > Determine the existence of an SQL injection condition in a web application.
 >
@@ -977,6 +1324,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: P
 - ICE: MC
+- confidence: 4
 
 > Investigate session handling within a web application.
 >
@@ -986,6 +1334,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: P
 - ICE: MC
+- confidence: 5
 
 > The concept of fuzzing within a web application testing methodology.
 >
@@ -995,6 +1344,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: P
 - ICE: MC
+- confidence: 5
 
 > Parameter manipulation techniques, particularly the use of client side proxies.
 
@@ -1002,6 +1352,8 @@ Within the tables, the following acronyms apply:
 
 - ACE: P
 - ICE: MC
+- confidence: 3
+- todo: TLS vulns cheat sheet
 
 > Identifying weak (or missing) encryption.
 >
@@ -1013,6 +1365,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: P
 - ICE: MC
+- confidence: 4
 
 > Identifying directory traversal vulnerabilities within applications.
 
@@ -1020,6 +1373,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: P
 - ICE: MC
+- confidence: 5
 
 > Identifying common vulnerabilities with file upload capabilities within applications.
 
@@ -1027,6 +1381,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: P
 - ICE: MC
+- confidence: 5
 
 > Investigate and exploitation of code injection vulnerabilities within web applications
 
@@ -1034,6 +1389,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: P
 - ICE: MC
+- confidence: 4
 
 > Assessment of web applications for CRLF vulnerabilities
 
@@ -1041,6 +1397,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: P
 - ICE: MC
+- confidence: 5
 
 > Assessing the logic flow within an application and the potential for subverting the logic.
 
@@ -1050,6 +1407,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC, P
+- confidence: 4
 
 > Knowledge of common attack vectors for Microsoft SQL Server. Understanding of privilege escalation and attack techniques for a system compromised via database connections.
 
@@ -1057,6 +1415,8 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC, P
+- confidence: 3
+- todo: Oracle default creds cheat sheet, SQLi cheat sheet
 
 > Derivation of version and patch information from hosts running Oracle software.
 >
@@ -1066,6 +1426,7 @@ Within the tables, the following acronyms apply:
 
 - ACE: MC, P
 - ICE: MC, P
+- confidence: 4
 
 > Common databases (MS SQL server, Oracle, MySQL and Access) and the connection and authentication methods used by web applications.
 >
