@@ -405,12 +405,42 @@ How are risks planned / managed in an engagement
 
 - ACE: MC, P
 - ICE: MC, P
-- confidence: 2
-- todo: nmap flags cheatsheet
+- confidence: 4
 
 > Analysis of output from tools used to map the route between the engagement point and a number of targets.
 >
 > Network sweeping techniques to prioritise a target list and the potential for false negatives.
+
+#### Network Routes
+
+`traceroute` / `tracert`: Adjust TTL value of IP header to elicit an ICMP `TIME_EXCEEDED` response from each gateway along the route to the host.
+
+Can be blocked by firewalls not allowing ICMP, unlikely UDP ports. Anti filtering connection methods (`-M`):
+
+| Name    | Flag       | Description                                                  |
+| ------- | ---------- | ------------------------------------------------------------ |
+| default |            | UDP datagrams using unlikely ports, host determined by ICMP "unreach port" |
+| icmp    | `-I`       | ICMP echo packets, only works if you can ping host           |
+| tcp     | `-T`       | TCP `SYN` probes, reliable way of bypassing firewall if you can view an open port on the other side of it. (e.g. `-T -p 80`) |
+| tcpconn |            | Full TCP connection, not recommended                         |
+| udp     | `-U`       | UDP datagram to known open port. Application always sees this (as no handshake with UDP). You never get to see the final hop. |
+| udplite | `-UL`      | As above but for UDP-Lite datagrams                          |
+| dccp    | -D         | Creates "half open" connections as with TCP                  |
+| raw     | `-P proto` | Creates a raw IP packet with the correct protocol number but no protocol-specific headers |
+
+#### Host Discovery
+
+| Name             | Flag                | Description                                                  |
+| ---------------- | ------------------- | ------------------------------------------------------------ |
+| List scan        | `-sL`               | Just output list of hosts without touching the network (for sanity check). Can be used with `-R` to reverse DNS lookup en masse |
+| No port scan     | `-sn`               | Don't scan ports, just discover hosts. Uses ICMP echo, TCP SYN on 443, TCP ACK on 80, ICMP timestamp. Privileged users on a local network will use ARP requests. |
+| No ping          | `-Pn`               | Skip host discovery entirely. Privileged users on local network will still get an ARP scan though. |
+| TCP SYN ping     | `-PS <ports>`       | Define ports to attempt TCP SYN to. If either RST or SYN/ACK is returned, you know there's a host there. |
+| TCP ACK ping     | `-PA <ports>`       | As above but with TCP ACK, which a live host should always respond with RST. Good if firewalls are blocking SYN |
+| UDP ping         | `-PU <ports>`       | Target a specifically **closed** port in order to get back an ICMP port unreachable packet |
+| SCTP ping        | `-PY <ports>`       | List TCP but `INIT` instead of `SYN`, `ABORT` instead of `RST` and `INIT-ACK` instead of `SYN/ACK`. No idea when this would be any use. Telecoms infra probably. |
+| ICMP pings       | `-PE`, `-PP`, `-PM` | Echo, timestamp and address mask queries. Don't use them though as they probably won't work. |
+| IP Protocol ping | `-PO <proto>`       | Use a specific IP protocol, look for a response on the same protocol or an ICMP response |
 
 ### B5 Interpreting Tool Output
 
@@ -478,19 +508,23 @@ nmap -O
 
 - ACE: MC
 - ICE: MC, P
-- confidence: 2
+- confidence: 4
 
 > Determining server types and network application versions from application banners.
 >
 > Evaluation of responsive but unknown network applications.
 
+`netcat / ncat / nc <server> <port>`
 
+`ncat -C --ssl <server> <port>`
+
+`openssl s_client -connect <server>:<port>`
 
 ### B10 Network Access Control Analysis
 
 - ACE: MC
 - ICE: MC
-- confidence: 2
+- confidence: 3
 
 > Reviewing firewall rule bases and network access control lists.
 
@@ -837,26 +871,30 @@ Bounced email
 
 - ACE: MC
 - ICE: MC, P
-- confidence: 2
+- confidence: 3
 
 > Security issues relating to the networking protocols:
 >
 > - ARP
->
 > - DHCP
->
 > - CDP
->
 > - HSRP
->
 > - VRRP
->
 > - VTP
->
 > - STP
->
 > - TACACS+
->
+> 
+
+| Protocol | Consideration                                                |
+| -------- | ------------------------------------------------------------ |
+| ARP      | ARP spoofing, ARP cache for host discovery                   |
+| DHCP     | Not a security boundary                                      |
+| CDP      | Leaks info about network gatways before auth                 |
+| HSRP     | Hot Standby Routing Protocol. Not a routing protocol :joy:   |
+| VRRP     | Virtual Router Redundancy Protocol. Spoof packets, affect availability |
+| VTP      | VLAN Trunking Protocol. Spoof VLAN tags in packets, hop VLANs |
+| STP      | Spanning Tree Protocol. Network routing, screw with it to make impossible routes. |
+| TACACS+  | Terminal Access Control Access Control Server. Surely not going to be quizzed on this in MC... |
 
 ### D4 IPSec
 
@@ -875,7 +913,7 @@ Bounced email
 
 - ACE: MC
 - ICE: MC, P
-- confidence: 2
+- confidence: 3
 - todo: List common ports config, SIP methods
 
 > Enumeration and fingerprinting of devices running VoIP services.
