@@ -973,7 +973,7 @@ Bounced email
 
 - ACE: MC
 - ICE: MC, P
-- confidence: 2
+- confidence: 3
 
 > Identifying domains/workgroups and domain membership within the target network.
 >
@@ -983,26 +983,37 @@ Bounced email
 >
 > Identifying and analysing accessible SMB shares
 
+| Command                                  | Description                        |
+| ---------------------------------------- | ---------------------------------- |
+| `net view /domain`                       | View hosts in current domain       |
+| `net user /domain`                       | View users in domain               |
+| `net localgroup "Administrators"`        | List local admins                  |
+| `net group "Domain Admins" /domain`      | List members of domain admin group |
+| `net group "Domain Controllers" /domain` | List domain controllers            |
+
 ### E2 User Enumeration
 
 - ACE: MC
 - ICE: MC, P
-- confidence: 2
+- confidence: 3
 
 > Identifying user accounts on target systems and domains using NetBIOS, SNMP and LDAP.
->
+
+Likelihood of detailed answer for MC = meh
 
 ### E3 Active Directory
 
 - ACE: MC
 - ICE: MC, P
-- confidence: 2
+- confidence: 3
 
 > Active Directory Roles (Global Catalogue, Master Browser, FSMO)
 >
 > Reliance of AD on DNS and LDAP
 >
 > Group Policy (Local Security Policy)
+
+Meh, pretty sure I don't need to dive into this for MC
 
 ### E4 Windows Passwords
 
@@ -1045,18 +1056,41 @@ Bounced email
 
 - ACE: MC
 - ICE: MC, P
-- confidence: 2
+- confidence: 3
 
 > Knowledge of common windows patch management strategies:
 >
 > - SMS
->
-> - SUS
->
+>- SUS
 > - WSUS
->
-> - MBSA
->
+>- MBSA
+> 
+
+#### SMS
+
+- "Systems Management Server"
+
+#### SUS
+
+	- "Software Update Services"
+	- Version of Windows Update that is run on the local network
+
+#### WSUS
+
+- "Windows Server Update Services"
+- Connects to MS Update
+- Numerous other WSUS servers in the network can connect to the upstream WSUS server
+
+#### MBSA
+
+- "MS Baseline Security Analyser"
+- Run security audits against:
+  - Client versions of Windows, including Windows 7
+  - Windows Server, including Windows Server 2008
+  - SQL Server
+  - Internet Information Server (IIS)
+  - Internet Explorer
+  - Microsoft Office
 
 ### E7 Desktop Lockdown
 
@@ -1084,6 +1118,9 @@ Bounced email
 - confidence: 2
 
 > Knowledge of significant vulnerabilities in common windows applications for which there is public exploit code available.
+
+- [x] Knowledge that metasploit exists
+- [x] Knowledge that the MC app exam probably isn't going to even test knowledge of common LOLBINS
 
 ## Appendix F: Unix Security Assessment
 
@@ -1173,7 +1210,7 @@ Bounced email
 
 - ACE: MC
 - ICE: MC, P
-- confidence: 2
+- confidence: 3
 
 > Berkeley r* service:
 >
@@ -1181,29 +1218,51 @@ Bounced email
 >
 > - trust relationships
 >
->
-> Impact of poorly-configured trust relationships.
+>Impact of poorly-configured trust relationships.
+
+<https://en.wikipedia.org/wiki/Berkeley_r-commands>
+
+- rcp, rexec, rlogin, rsh, rstat, ruptime, rwho
+- No encryption
+- Trust relationship based on client's hostname and username, written in `/etc/hosts.equiv` and `.rhosts`
+- You can just lie to the server
 
 ### F7 X11
 
 - ACE: MC
 - ICE: MC, P
-- confidence: 2
+- confidence: 3
 
 > X Windows security and configuration; hostbased vs. user-based access control.
->
+
+#### Host-based
+
+- Specify list of hosts which are allowed to connect
+
+#### User-based
+
+- Actual user proof required, e.g. Kerberos
+
+#### Cookie-based
+
+- Exchange some data which actually authenticates that you should have access
 
 ### F8 RPC services
 
 - ACE: MC
 - ICE: MC, P
-- confidence: 2
+- confidence: 3
 
 > RPC service enumeration
 >
 > Common RPC services
 >
 > Recent or commonly-found RPC service vulnerabilities.
+
+- Binaries bound to a register of RPC services
+- `rpcinfo <host>` to query RPC services on a host
+- Vulns depend on the service
+- No inherent auth
 
 ### F9 SSH
 
@@ -1337,12 +1396,35 @@ Bounced email
 
 - ACE: MC
 - ICE: MC
-- confidence: 2
+- confidence: 4
 - todo: basic threat modelling techniques
 
 > Simple threat modelling based on customer perception of risk.
 >
 > Relate functionality offered by the application to potential attack vectors.
+
+<https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html>
+
+#### Terms
+
+- Threat agent
+- Impact
+- Likelihood
+- Controls
+- Preventions
+- Mitigations
+- Data flow
+- Trust boundary
+
+#### DREAD
+
+- **D**amage - how bad would an attack be?
+- **R**eproducibility - how easy it is to reproduce the attack?
+- **E**xploitability - how much work is it to launch the attack?
+- **A**ffected users - how many people will be impacted?
+- **D**iscoverability - how easy it is to discover the threat?
+
+Risk Value = (Damage + Affected users) x (Reproducibility + Exploitability + Discoverability).
 
 ### H3 Information Gathering from Web Mark-up
 
