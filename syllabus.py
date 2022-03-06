@@ -75,7 +75,7 @@ with open( infile, 'r' ) as f:
       else:
         k = 'meta'
         metakeys.append(mname)
-      if ',' in m.group(2): v = [x.strip() for x in m.group(2).split(',')]
+      if k == 'how_examined': v = [x.strip() for x in m.group(2).split(',')]
       else: v = m.group(2).strip()
       data['structure'][topic][skill][k][mname] = v
       continue
@@ -210,8 +210,8 @@ elif args.format == 'md':
 
       print('')
       for line in skill['details'].splitlines():
-        if len( line.strip() ) == 0: continue
+        # if len( line.strip() ) == 0: continue
         print('> ' + line)
-
+      print( skill['notes'] )
       print('')
 
