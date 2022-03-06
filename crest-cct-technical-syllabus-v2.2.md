@@ -913,13 +913,64 @@ Bounced email
 
 - ACE: MC
 - ICE: MC, P
-- confidence: 3
-- todo: List common ports config, SIP methods
+- confidence: 4
 
 > Enumeration and fingerprinting of devices running VoIP services.
 >
 > Knowledge of the SIP protocol.
->
+
+- nmap will identify SIP just fine
+- Ports 5060 TCP and UDP, 5061 TLS (typically)
+
+#### Exploitation:
+
+1. Identify service exists (nmap, sippts, sipvicious - **NB** sipvicious only works over UDP)
+2. Scan for extension numbers using tool of choice, identifying which require auth
+3. Attempt `REGISTER` or `INVITE` to test auth
+4. Also possible to crack auth passwords, out of scope for these notes though!
+
+#### Methods
+
+- **`INVITE`**: Establishes a session with another user
+- **`ACK`**: Confirms an INVITE request
+- **`BYE`** : Ends a session
+- **`CANCEL`**: Cancels establishing of a session
+- **`REGISTER`**: Communicates user location (host name, IP)
+- **`OPTIONS`**: Communicates information about the capabilities of the calling and receiving SIP phones
+- **`PRACK`**: Provisional Acknowledgement
+- **`SUBSCRIBE`**: Subscribes for Notification from the notifier
+- **`NOTIFY`**: Notifies the subscriber of a new event
+- **`PUBLISH`**: Publishes an event to the Server
+- **`INFO`**: Sends mid session information
+- **`REFER`**: Asks the recipient to issue call transfer
+- **`MESSAGE`**: Transports Instant Messages
+- **`UPDATE`**: Modifies the state of a session
+
+#### Response Codes
+
+Pretty much the same as HTTP:
+
+- **`1XX`**: Informational responses, such as 180 (ringing)
+- **`2XX`**: Success responses
+- **`3XX`**: Redirection responses
+- **`4XX`**: Request failures
+- **`5XX`**: Server errors
+- **`6XX`**: Global failures
+
+#### Typical Session Initiation
+
+| Client                | Server        |
+| --------------------- | ------------- |
+| `REGISTER`            | --->          |
+| <---                  | `200 OK`      |
+| `INVITE`              | --->          |
+| <---                  | `100 TRYING`  |
+| <---                  | `180 RINGING` |
+| <---                  | `200 OK`      |
+| `ACK`                 | --->          |
+| <--- `RTP/RTCP comms` | --->          |
+| `BYE`                 | --->          |
+| <---                  | `200 OK`      |
 
 ### D6 Wireless
 
@@ -1397,7 +1448,6 @@ Meh, pretty sure I don't need to dive into this for MC
 - ACE: MC
 - ICE: MC
 - confidence: 4
-- todo: basic threat modelling techniques
 
 > Simple threat modelling based on customer perception of risk.
 >
@@ -1686,12 +1736,71 @@ Risk Value = (Damage + Affected users) x (Reproducibility + Exploitability + Dis
 
 - ACE: MC, P
 - ICE: MC, P
-- confidence: 3
-- todo: Oracle default creds cheat sheet, SQLi cheat sheet
+- confidence: 4
 
 > Derivation of version and patch information from hosts running Oracle software.
 >
 > Default Oracle accounts.
+
+- Typical listener on 1521/TCP
+- I was going to do an exhaustive list of default Oracle accounts but it was exhaust*ing* instead
+- Get version with `SELECT * FROM v$version;`
+
+#### The classic default accounts
+
+| Username | Known valid passwords |
+| ---------- | ----------- |
+| SYSTEM | CHANGE_ON_INSTALL, D_SYSPW, MANAGER, ORACLE, SYSTEMPASS, SYSTEM, MANAG3R, ORACL3, 0RACLE, 0RACL3, ORACLE8, ORACLE9, ORACLE9I, 0RACLE9I, 0RACL39I, D_SYSTPW, ORACLE8I, 0RACLE8, 0RACLE9, 0RACLE8I, 0RACL38, 0RACL39, 0RACL38I |
+| SYS | 0RACLE8, 0RACLE9, 0RACLE8I, 0RACL38, 0RACL39, 0RACL38I, CHANGE_ON_INSTALL, D_SYSPW, MANAGER, ORACLE, SYS, SYSPASS, MANAG3R, ORACL3, 0RACLE, 0RACL3, ORACLE8, ORACLE9, ORACLE8I, ORACLE9I, 0RACLE9I, 0RACL39I |
+| HR | <UNKNOWN>, CHANGE_ON_INSTALL, HR, UNKNOWN |
+| CTXSYS | <UNKNOWN>, CHANGE_ON_INSTALL, CTXSYS, UNKNOWN |
+| WKPROXY | WKPROXY, CHANGE_ON_INSTALL, UNKNOWN |
+| VRR1 | VRR1, VRR2, UNKNOWN |
+| SH | CHANGE_ON_INSTALL, SH, UNKNOWN |
+| QS_WS | CHANGE_ON_INSTALL, QS_WS, UNKNOWN |
+| QS_OS | CHANGE_ON_INSTALL, QS_OS, UNKNOWN |
+| QS_ES | CHANGE_ON_INSTALL, QS_ES, UNKNOWN |
+| QS_CS | CHANGE_ON_INSTALL, QS_CS, UNKNOWN |
+| QS_CBADM | CHANGE_ON_INSTALL, QS_CBADM, UNKNOWN |
+| QS_CB | CHANGE_ON_INSTALL, QS_CB, UNKNOWN |
+| QS_ADM | CHANGE_ON_INSTALL, QS_ADM, UNKNOWN |
+| QS | CHANGE_ON_INSTALL, QS, UNKNOWN |
+| PM | CHANGE_ON_INSTALL, UNKNOWN, PM |
+| OE | CHANGE_ON_INSTALL, UNKNOWN, OE |
+| MMO2 | MMO2, MMO3, UNKNOWN |
+| CDEMO82 | CDEMO82, CDEMO83, UNKNOWN |
+| APPLYSYSPUB | FNDPUB, PUB, <UNKNOWN> |
+| APPLSYSPUB | APPLSYSPUB, PUB, FNDPUB |
+| APPLSYS | APPLSYS, APPS, FND |
+| WKSYS | CHANGE_ON_INSTALL, WKSYS |
+| TEST | PASSWD, TEST |
+| SYSMAN | SYSMAN, OEM_TEMP |
+| SYSADMIN | <UNKNOWN>, SYSADMIN |
+| SCOTT | TIGER, TIGGER |
+| SAP | SAPR3, 06071992 |
+| REP_OWNER | DEMO, REP_OWNER |
+| PORTAL_DEMO | <UNKNOWN>, PORTAL_DEMO |
+| PORTAL30 | PORTAL30, PORTAL31 |
+| OWF_MGR | <UNKNOWN>, OWF_MGR |
+| OSE$HTTP$ADMIN | Invalid, password, INVALID |
+| ORACACHE | <UNKNOWN>, ORACACHE |
+| OLAPSYS | MANAGER, OLAPSYS |
+| OLAPSVR | INSTANCE, OLAPSVR |
+| OCM_DB_ADMIN | <UNKNOWN>, OCM_DB_ADMIN |
+| OAS_PUBLIC | OAS_PUBLIC, <UNKNOWN> |
+| MDDEMO_MGR | MDDEMO_MGR, MGR |
+| MDDEMO_CLERK | CLERK, MGR |
+| #INTERNAL | ORACLE, SYS_STNT |
+| INTERNAL | ORACLE, SYS_STNT |
+| EJSADMIN | EJSADMIN, EJSADMIN_PASSWORD |
+| DSGATEWAY | <UNKNOWN>, DSGATEWAY |
+| CISINFO | CISINFO, ZWERG |
+| CIS | CIS, ZWERG |
+| AURORA$ORB$UNAUTHENTICATED | INVALID, <INVALID> |
+| AURORA$JIS$UTILITY$ | <INVALID>, INVALID |
+| ANONYMOUS | ANONYMOUS, <INVALID> |
+| ADMINISTRATOR | ADMIN, ADMINISTRATOR |
+| ADMIN | JETSPEED, WELCOME |
 
 ### J3 Web / App / Database Connectivity
 
