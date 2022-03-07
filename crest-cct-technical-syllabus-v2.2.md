@@ -509,6 +509,7 @@ nmap -O
 - ACE: MC
 - ICE: MC, P
 - confidence: 4
+- todo: common services table by port
 
 > Determining server types and network application versions from application banners.
 >
@@ -1180,7 +1181,6 @@ Meh, pretty sure I don't need to dive into this for MC
 - ACE: MC
 - ICE: MC, P
 - confidence: 3
-- todo: some bashfu for these archaic services
 
 > Discovery of valid usernames from network services commonly running by default:
 >
@@ -1192,8 +1192,11 @@ Meh, pretty sure I don't need to dive into this for MC
 >
 > - finger
 >
->
-> Understand how finger daemon derives the information that it returns, and hence how it can be abused.
+>Understand how finger daemon derives the information that it returns, and hence how it can be abused.
+
+- r* commands: `rusers <host>`
+- SMTP: `EXPN` and `VRFY` commands
+- finger: TCP/79 , shows you where someone was last seen
 
 ### F2 Unix vulnerabilities
 
@@ -1346,14 +1349,27 @@ Meh, pretty sure I don't need to dive into this for MC
 - ACE: MC, P
 - ICE: MC, P
 - confidence: 4
-- todo: Probably some ancient CVEs for Apache and IIS that nobody ever sees any more
 
 > Common web servers and their fundamental differences and vulnerabilities associated with them:
 >
 > - IIS
->
-> - Apache (and variants)
->
+>- Apache (and variants)
+> 
+
+*I've seen things you people wouldn't believe... Unauthenticated unsafe file upload off the web root of a security appliance... I watched C-code compile cleanly through a remote shell on a network gateway... All those moments will be lost in time, like tears in the rain...*
+
+#### IIS
+
+- MS00-057: Path traversal through unicode chars leading to arbitrary file read and RCE in IIS 4.0
+- [CVE-2003-0224](https://www.cvedetails.com/cve/CVE-2003-0224/): Server Side Include RCE in IIS 5.0
+- [CVE-2010-2730](https://www.cvedetails.com/cve/CVE-2010-2730/): Buffer overflow to RCE in IIS 7.5
+
+#### Apache projects
+
+- [ CVE-2012-0838](https://www.cvedetails.com/cve/CVE-2012-0838/): Apache Struts RCE through OGNL expression
+- [CVE-2013-4316](https://www.cvedetails.com/cve/CVE-2013-4316/): Apache Struts dynamic method invocation
+- [ CVE-2016-3082](https://www.cvedetails.com/cve/CVE-2016-3082/): Apache Struts stylesheet location parameter RCE
+- [CVE-2017-5638](https://www.cvedetails.com/cve/CVE-2017-5638/): Apache Struts Jakarta Multipart Parser RCE
 
 ### G3 Web Enterprise Architectures
 
