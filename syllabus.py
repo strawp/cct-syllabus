@@ -67,7 +67,7 @@ with open( infile, 'r' ) as f:
     if skill == '': continue
 
     # Skill metadata
-    m = re.search(r'^ ?- ([a-z_0-9]+):([a-z0-9_, ]+)$', line, re.I)
+    m = re.search(r'^ *- ([a-z_0-9]+):(.+)$', line, re.I)
     if m and skillmeta:
       mname = m.group(1).lower()
       if m.group(1) in ['ICE','ACE']:
