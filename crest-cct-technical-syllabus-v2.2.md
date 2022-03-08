@@ -509,11 +509,141 @@ nmap -O
 - ACE: MC
 - ICE: MC, P
 - confidence: 4
-- todo: common services table by port
 
 > Determining server types and network application versions from application banners.
 >
 > Evaluation of responsive but unknown network applications.
+
+#### TCP Top 40
+
+Greetings pop pickers, it's time for the TCP/IP nmap top 40 (ish)...
+
+| port | name | info |
+| ---- | ---- | ---- |
+| 80 | http | |
+| 23 | telnet | |
+| 443 | https | |
+| 21 | ftp | |
+| 22 | ssh | |
+| 25 | smtp | |
+| 3389 | ms-wbt-server | Remote desktop |
+| 110 | pop3 | |
+| 445 | microsoft-ds | |
+| 139 | netbios-ssn | |
+| 143 | imap | |
+| 53 | domain | |
+| 135 | msrpc | |
+| 3306 | mysql | |
+| 8080 | http-proxy | |
+| 1723 | pptp | Point-to-Point Tunneling Protocol |
+| 111 | rpcbind | |
+| 995 | pop3s | POP over TLS |
+| 993 | imaps | TLS version of IMAP |
+| 5900 | vnc | |
+| 1025 | NFS-or-IIS | |
+| 587 | submission | SMTP with StartTLS, generally |
+| 8888 | sun-answerbook | |
+| 199 | smux | |
+| 1720 | h323q931 | |
+| 465 | smtps | SMTP implicitly using TLS |
+| 548 | afp | |
+| 113 | ident | |
+| 81 | hosts2-ns | HTTP, more likely |
+| 6001 | X11:1 | |
+| 10000 | snet-sensor-mgmt | |
+| 514 | shell | |
+| 5060 | sip | |
+| 179 | bgp | |
+| 1026 | LSA-or-nterm | |
+| 2000 | cisco-sccp | |
+| 8443 | https-alt | |
+| 8000 | http-alt | |
+| 32768 | filenet-tms | |
+| 554 | rtsp | |
+| 1433 | ms-sql-s | MS SQL Server |
+| 2049 | nfs |  |
+| 6000 | X11 |  |
+| 389 | ldap | Surprised this is so low on nmap's list TBH |
+
+#### UDP Top 40
+
+And for UDP...
+
+| port | name | info |
+| ---- | ---- | ---- |
+| 631 | ipp | Internet Printing Protocol |
+| 161 | snmp | |
+| 137 | netbios-ns | |
+| 123 | ntp | Network Time Protocol |
+| 138 | netbios-dgm | |
+| 1434 | ms-sql-m | |
+| 445 | microsoft-ds | |
+| 135 | msrpc | |
+| 67 | dhcps | |
+| 53 | domain | |
+| 139 | netbios-ssn | |
+| 500 | isakmp | |
+| 68 | dhcpc | |
+| 520 | route | |
+| 1900 | upnp | |
+| 4500 | nat-t-ike | |
+| 514 | syslog | |
+| 162 | snmptrap | |
+| 69 | tftp | |
+| 5353 | zeroconf | |
+| 111 | rpcbind | |
+| 1701 | L2TP | |
+| 998 | puparp | |
+| 996 | vsinet | |
+| 997 | maitrd | |
+| 999 | applix | |
+| 3283 | netassistant | |
+| 1812 | radius | |
+| 136 | profile | |
+| 2222 | msantipiracy | |
+| 2049 | nfs | |
+| 32768 | omad | |
+| 5060 | sip | |
+| 1025 | blackjack | |
+| 1433 | ms-sql-s | |
+| 3456 | IISrpc-or-vat | |
+| 80 | http | |
+
+#### Golden Oldies
+
+And here are a whole bunch of services that won't be referenced anywhere outside of this exam. Ask your grandad:
+
+| port | name | info |
+| ---- | ---- | ---- |
+| 1/tcp | tcpmux | Allows anyone to connect to the host and query which services it is running. Hard to firewall, deprecated in 2016 |
+| 5/tcp | rje | Remote Job Entry |
+| 7/tcp | echo | Literally sends back any data it receives |
+| 11/tcp | systat | |
+| 13/tcp | daytime | Returns ASCII string of current datetime |
+| 15/tcp | netstat | |
+| 17/tcp | qotd | Broadcasts a message set by the sysadmin. UDP implementation can be abused for DoS |
+| 18/tcp | msp | Message Send Protocol |
+| 19/tcp | chargen | Spew random chars. UDP version can be abused for DoS |
+| 20/tcp | ftp-data | |
+| 24/tcp | priv-mail | |
+| 26/tcp | rsftp | |
+| 37/tcp | time | Send the time back as a signed int |
+| 38/tcp | rap | Route Access Protocol |
+| 41/tcp | graphics | |
+| 42/tcp | nameserver | |
+| 43/tcp | whois | |
+| 47/tcp | ni-ftp | |
+| 48/tcp | auditd | |
+| 49/tcp | tacacs | Terminal Access Control Access Control Server |
+| 53/tcp | domain | |
+| 63/tcp | via-ftp | |
+| 65/tcp | tacacs-ds | |
+| 66/tcp | sqlnet | |
+| 67/tcp | dhcps | |
+| 68/tcp | dhcpc | |
+| 69/tcp | tftp | |
+| 70/tcp | gopher | |
+| 79/tcp | finger | |
 
 `netcat / ncat / nc <server> <port>`
 
@@ -1606,6 +1736,88 @@ Risk Value = (Damage + Affected users) x (Reproducibility + Exploitability + Dis
 > Identification and exploitation of Encoded values (e.g. Base64) and Identification and exploitation of Cryptographic values (e.g. MD5 hashes)
 >
 > Identification of common SSL vulnerabilities
+> 
+
+
+#### SSLv3 Padding Oracle On Downgraded Legacy Encryption Vulnerability (POODLE) 
+
+MitM attackers can decrypt a selected byte of a cipher text in as few as 256 tries if they are able to force a victim application to repeatedly send the same data over newly created SSL 3.0 connections. 
+
+
+#### TLS Padding Oracle Information Disclosure Vulnerability (TLS POODLE) 
+
+Encrypted TLS traffic can be decrypted. This vulnerability could allow for the decryption of HTTPS traffic by an unauthorized third party. 
+
+
+#### Weak SSL Cipher Lengths                                      
+
+Messages encrypted with LOW and MEDIUM key lengths&nbsp;(\<128bits) are easy to decrypt in today's climate. NULL ciphers offer no encryption at all and ANONYMOUS ciphers provide no authentication meaning that data can become exposed via a man-in-the-middle attack. 
+
+
+#### OpenSSL SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG Session Resume Ciphersuite Downgrade 
+
+The version of OpenSSL on the remote host has been shown to allow resuming session with a weaker cipher than was used when the session was initiated. This means that an appropriately positioned threat actor could manipulate the OpenSSL session cache to cause subsequent resumptions of that session to use a weaker cipher chosen by the attacker. 
+
+
+#### SSL/TLS EXPORT_RSA \<= 512-bit Cipher Suites Supported (FREAK) 
+
+If a server is willing to negotiate an export ciphersuite, a man-in-the-middle may trick a browser to use a weak export key. By design, export RSA moduli must be less than 512 bits long; hence, they can be factored in less than 12 hours on modern computing hardware 
+
+
+#### SSL RC4 Cipher Suites Supported (Bar Mitzvah)                
+
+If plaintext is repeatedly encrypted (e.g. HTTP cookies) and an attacker is able to obtain many (i.e. tens of millions) ciphertexts, the attacker may be able to derive the plaintext. 
+
+
+#### SWEET32 - SSL 64-bit Block Size Cipher Suites Supported      
+
+An appropriately placed network attacker who is able to monitor a long-lived Triple-DES HTTPS connection between a web browser and a website can recover and decrypt data associated with that connection. 
+
+
+#### SSL/TLS Diffie-Hellman Modulus \<= 1024 Bits (Logjam)        
+
+Diffie-Hellman moduli of \<= 512 bits can easily be cracked by individual attackers, whereas moduli of \<= 1024 would require so-called "nation state" capabilities in order to successfully exploit this vulnerability. 
+
+
+#### TLS v1.0                                    
+
+
+
+
+#### TLS v1.1 Protocol in Use                                     
+
+TLSv1.1 has been proposed for deprecation by the IETF, with Firefox and Google Chrome having either already removed support for or proposed an intention for removing support for it. Whilst TLSv1.1 does not have any major vulnerability affecting it, it is still recommended that is not used as it lacks support for current and recommended cipher suites. Ciphers that support encryption before MAC computation and authenticated encryption modes such as GCM cannot be used with TLS 1.1. 
+
+
+#### SSL/TLS Protocol Initialization Vector Implementation Information Disclosure Vulnerability (BEAST) 
+
+A vulnerability exists in SSL 3.0 and TLS 1.0 that could allow information disclosure if an attacker intercepts encrypted traffic served from an affected system. TLS 1.1, TLS 1.2, and all cipher suites that do not use CBC mode are not affected. 
+
+
+#### Lucky Thirteen                                               
+
+The usage of cipher block chaining (CBC) ciphers with TLS is potentially susceptible to attackers being able to recover the plaintext of encrypted data. The attacks can only be carried out by a determined attacker who is located close to the machine being attacked and who can generate sufficient sessions for the attacks. 
+
+
+#### Client-Initiated Renegotiation                               
+
+When a new TLS connection is being negotiated, the server will typically spend significantly more CPU resources than the client. Thus, if many new TLS connections are requested per second, denial-of-service attacks (DoS) are possible. If the TLS server supports client-initiated renegotiation, an attacker can force a server to perform many expensive cryptographic operations over a single TCP connection &ndash; making this attack significantly more viable. 
+
+
+#### HTTP compression (BREACH)                                    
+
+BREACH is an attack against HTTP compression, which can be used to recover parts of the plain-text in a HTTP response. HTTP compression is much more common than TLS-level compression. The attack is agnostic to the version of TLS and works against any cipher suite. 
+
+
+#### Fallback Signaling Cipher Suite Value (SCSV) Not Supported   
+
+The TLS Fallback Signaling Cipher Suite Value (SCSV) is used to prevent protocol downgrade attacks. It allows the client to indicate to the server when the current connection attempt is a fallback attempt. When present in the TLS client hello message, the server knows that the connecting client can use a better protocol than it is currently connecting with, and can choose to reject the connection. TLS Fallback SCSV gained popularity after the POODLE attack was discovered, since it prevented clients that supported TLS from being forced back to SSLv3 (to be attacked). Nowadays, it is still a good defense-in-depth feature to support, as it will, for example, prevent a client being forced back from TLSv1.2 to TLSv1.1. When not supported, a man-in-the-middle attacker might be able to dictate the protocol version used to communicate. 
+
+
+#### Return Of Bleichenbacher's Oracle Threat (ROBOT)             
+
+ROBOT is the return of a 19-year-old vulnerability that allows performing RSA decryption and signing operations with the private key of a TLS server. After Bleichenbacher's original attack TLS decided kept the vulnerable encryption modes and added countermeasures. Research since has showed that these countermeasures were incomplete leading to more complicated countermeasures. The affected host - despite being patched and theoretically not vulnerable to known versions of the ROBOT attack - still supports cipher-suites relying on RSA-based encryption schemes. RSA encryption modes currently present a risk since further variations of this attack may reveal new oracles. In addition, these modes also lack forward secrecy. 
+
 
 ### H13 Source Code Review
 
