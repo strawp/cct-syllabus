@@ -1226,13 +1226,53 @@ Meh, pretty sure I don't need to dive into this for MC
 > - obtain password hashes, both from the local SAM and cached credentials
 > - obtaining locally-stored clear-text passwords
 > - crack password hashes
->
-> - check patch levels
->
+>- check patch levels
 > - derive list of missing security patches
->
-> - reversion to previous state
->
+>- reversion to previous state
+> 
+
+#### Add A User
+
+```
+net user hacker P4ssw0rd /add 
+```
+
+#### Windows Hash Types
+
+<https://medium.com/@petergombos/lm-ntlm-net-ntlmv2-oh-my-a9b235c58ed4>
+
+- LM: 
+  - Max 14 Chars
+  - v weak because can be cracked in 2 7 char bits
+  - Digest size 16 chars
+  - e.g. `299BD128C1101FD6`
+  - Only enabled in XP and 2003 
+  - Not enabled, digest = AAD3B435B51404EEAAD3B435B51404EE
+  - Algorithm:
+    1. Convert all lower case to upper case
+    2. Pad password to 14 characters with NULL characters
+    3. Split the password to two 7 character chunks
+    4. Create two DES keys from each 7 character chunk
+    5. DES encrypt the string "KGS!@#$%" with these two chunks
+    6. Concatenate the two DES encrypted strings. This is the LM hash.
+- NTLM
+  - MD4(UTF-16-LE(password))
+  - 128 bit digest = 32 chars
+  - e.g. `B4B9B02E6F09A9BD760F388B67351E2B`
+  - Note, this is not true these days: <https://www.insecurity.be/blog/2018/01/21/retrieving-ntlm-hashes-and-what-changed-technical-writeup/>
+  - Switched to AES in 2016
+
+- NetNTLM
+
+#### pwdump
+
+People used to use this before mimikatz I guess, so we have to know about it
+
+Output format:
+
+```
+User:UID:LM:NTLM
+```
 
 ### E6 Windows Patch Management Strategies
 
@@ -1333,7 +1373,6 @@ Meh, pretty sure I don't need to dive into this for MC
 - ACE: MC
 - ICE: MC, P
 - confidence: 3
-- todo: Fricken solaris vulns, seriously
 
 > Recent or commonly-found Solaris vulnerabilities, and in particular those for which there is exploit code in the public domain.
 >
@@ -1344,15 +1383,21 @@ Meh, pretty sure I don't need to dive into this for MC
 > Common post-exploitation activities:
 >
 > - exfiltrate password hashes
->
-> - crack password hashes
->
+>- crack password hashes
 > - check patch levels
->
-> - derive list of missing security patches
->
+>- derive list of missing security patches
 > - reversion to previous state
 >
+
+#### Solaris
+
+- [CVE-2001-0797](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0797): "TTYPROMPT" vuln
+  - Buffer overflow in login in various System V based operating systems allows remote attackers to execute arbitrary commands via a large number of arguments through services such as telnet and rlogin.
+  - Affected `/bin/login`
+  - Affected:
+    - Solaris 2.6 - security loginlog invalid username re-tries
+    - Solaris 7 - security login buffer overflow
+    - Solaris 8 – Security login buffer overflow
 
 ### F3 FTP
 
@@ -1496,9 +1541,12 @@ Meh, pretty sure I don't need to dive into this for MC
 
 #### Apache projects
 
-- [ CVE-2012-0838](https://www.cvedetails.com/cve/CVE-2012-0838/): Apache Struts RCE through OGNL expression
+- [CVE-2002-0392](https://www.cvedetails.com/cve/CVE-2002-0392/): **Apache Chunked Encoding**. 
+  - Apache 1.3 through 1.3.24, and Apache 2.0 through 2.0.36, allows remote attackers to cause a denial of service and possibly execute arbitrary code via a chunk-encoded HTTP request that causes Apache to use an incorrect size.
+
+- [CVE-2012-0838](https://www.cvedetails.com/cve/CVE-2012-0838/): Apache Struts RCE through OGNL expression
 - [CVE-2013-4316](https://www.cvedetails.com/cve/CVE-2013-4316/): Apache Struts dynamic method invocation
-- [ CVE-2016-3082](https://www.cvedetails.com/cve/CVE-2016-3082/): Apache Struts stylesheet location parameter RCE
+- [CVE-2016-3082](https://www.cvedetails.com/cve/CVE-2016-3082/): Apache Struts stylesheet location parameter RCE
 - [CVE-2017-5638](https://www.cvedetails.com/cve/CVE-2017-5638/): Apache Struts Jakarta Multipart Parser RCE
 
 ### G3 Web Enterprise Architectures
@@ -1524,6 +1572,16 @@ Meh, pretty sure I don't need to dive into this for MC
 > All HTTP web methods and response codes.
 >
 > HTTP Header Fields relating to security features
+
+#### Response Codes
+
+- 1XX: Information
+- 2XX: Success
+- 3XX: Redirect
+  - 301: Moved *Permanently*
+  - 302: Moved *Temporarily*
+- 4XX: Client error
+- 4XX: Server error
 
 ### G5 Web Mark-up Languages
 
@@ -1979,7 +2037,8 @@ ROBOT is the return of a 19-year-old vulnerability that allows performing RSA de
 | Username | Known valid passwords |
 | ---------- | ----------- |
 | SYSTEM | CHANGE_ON_INSTALL, D_SYSPW, MANAGER, ORACLE, SYSTEMPASS, SYSTEM, MANAG3R, ORACL3, 0RACLE, 0RACL3, ORACLE8, ORACLE9, ORACLE9I, 0RACLE9I, 0RACL39I, D_SYSTPW, ORACLE8I, 0RACLE8, 0RACLE9, 0RACLE8I, 0RACL38, 0RACL39, 0RACL38I |
-| SYS | 0RACLE8, 0RACLE9, 0RACLE8I, 0RACL38, 0RACL39, 0RACL38I, CHANGE_ON_INSTALL, D_SYSPW, MANAGER, ORACLE, SYS, SYSPASS, MANAG3R, ORACL3, 0RACLE, 0RACL3, ORACLE8, ORACLE9, ORACLE8I, ORACLE9I, 0RACLE9I, 0RACL39I |
+| SYS | 0RACLE8, 0RACLE9, 0RACLE8I, 0RACL38, 0RACL39, 0RACL38I, **CHANGE_ON_INSTALL**, D_SYSPW, MANAGER, ORACLE, SYS, SYSPASS, MANAG3R, ORACL3, 0RACLE, 0RACL3, ORACLE8, ORACLE9, ORACLE8I, ORACLE9I, 0RACLE9I, 0RACL39I |
+| DBSNMP | werfen, DBSNMP |
 | HR | <UNKNOWN>, CHANGE_ON_INSTALL, HR, UNKNOWN |
 | CTXSYS | <UNKNOWN>, CHANGE_ON_INSTALL, CTXSYS, UNKNOWN |
 | WKPROXY | WKPROXY, CHANGE_ON_INSTALL, UNKNOWN |
@@ -2018,7 +2077,6 @@ ROBOT is the return of a 19-year-old vulnerability that allows performing RSA de
 | OAS_PUBLIC | OAS_PUBLIC, <UNKNOWN> |
 | MDDEMO_MGR | MDDEMO_MGR, MGR |
 | MDDEMO_CLERK | CLERK, MGR |
-| #INTERNAL | ORACLE, SYS_STNT |
 | INTERNAL | ORACLE, SYS_STNT |
 | EJSADMIN | EJSADMIN, EJSADMIN_PASSWORD |
 | DSGATEWAY | <UNKNOWN>, DSGATEWAY |
